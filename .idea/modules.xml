@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/modelbuilder.iml" filepath="$PROJECT_DIR$/.idea/modules/modelbuilder.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modelbuilder-build.iml" filepath="$PROJECT_DIR$/.idea/modules/modelbuilder-build.iml" />
     </modules>
   </component>
 </project>
