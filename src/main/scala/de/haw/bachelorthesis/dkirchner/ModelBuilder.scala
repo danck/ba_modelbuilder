@@ -29,13 +29,14 @@ object ModelBuilder {
     val sparkConf = new SparkConf().setAppName("Model Builder")
     val sc = new SparkContext(sparkConf)
 
-    val conf = new Configuration(sc.hadoopConfiguration)
+    val conf = new org.apache.hadoop.conf.Configuration(sc.hadoopConfiguration)
     conf.set("textinputformat.record.delimiter", "-------------------------")
     val input = sc.newAPIHadoopFile(textFile, classOf[TextInputFormat], classOf[LongWritable], classOf[Text], conf)
 
     //val documents: RDD[Seq[String]] = sc.textFile(textFile).
     val documents: RDD[Seq[String]] = input
-      .map {case (_, text) => text.toString.split(" ").toSeq }
+      .map (_._2.toString)
+      .map(_.split(" ").toSeq)
     documents.cache()
 
     val hashingTF = new HashingTF()
@@ -48,6 +49,6 @@ object ModelBuilder {
     //tfidf.foreach(elem => println(elem))
     documents.take(100).foreach(println(_))
 
-    println("SUCCESS 8.0")
+    println("SUCCESS 9.0")
   }
 }
