@@ -26,8 +26,7 @@ object ModelBuilder {
     val sc = new SparkContext(sparkConf)
 
     val documents: RDD[Seq[String]] = sc.textFile(textFile)
-      .map(_.replaceAll("\n", "DODODODODODOD"))
-      .map(_.split(" ").toSeq)
+      .map(_.split("e").toSeq)
     documents.cache()
 
     val hashingTF = new HashingTF()
@@ -40,6 +39,6 @@ object ModelBuilder {
     //tfidf.foreach(elem => println(elem))
     documents.take(100).foreach(println(_))
 
-    println("SUCCESS 5.0")
+    println("SUCCESS 6.0")
   }
 }
