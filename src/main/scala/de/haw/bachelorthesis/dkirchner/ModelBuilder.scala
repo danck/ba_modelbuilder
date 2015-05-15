@@ -25,7 +25,7 @@ object ModelBuilder {
     val sparkConf = new SparkConf().setAppName("Model Builder")
     val sc = new SparkContext(sparkConf)
 
-    val documents: RDD[Seq[String]] = sc.textFile(textFile).map(_.split("-------------------------").toSeq)
+    val documents: RDD[Seq[String]] = sc.textFile(textFile).map(_.split(" ").toSeq)
     documents.cache()
     val doc_count = documents.count()
 
@@ -37,7 +37,7 @@ object ModelBuilder {
     val tfidf: RDD[Vector] = idf.transform(tf)
 
     //tfidf.foreach(elem => println(elem))
-    println("documents: "+ doc_count)
+    documents.take(100).foreach(println(_))
 
     println("SUCCESS")
   }
