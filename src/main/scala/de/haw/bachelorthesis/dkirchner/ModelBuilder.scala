@@ -34,7 +34,8 @@ object ModelBuilder {
     val input = sc.newAPIHadoopFile(textFile, classOf[TextInputFormat], classOf[LongWritable], classOf[Text], conf)
 
     //val documents: RDD[Seq[String]] = sc.textFile(textFile).
-    val documents: RDD[Seq[String]] = input
+    //val documents: RDD[Seq[String]] = input
+    val documents: RDD[String] = input
       .map (_._2.toString)
 /*      .map(_.split(" ").toSeq)
     documents.cache()
