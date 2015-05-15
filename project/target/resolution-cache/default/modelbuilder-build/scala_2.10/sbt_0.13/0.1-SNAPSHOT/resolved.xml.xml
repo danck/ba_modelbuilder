@@ -4,7 +4,7 @@
 		module="modelbuilder-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150514201825"
+		publication="20150514213149"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
