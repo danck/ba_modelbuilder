@@ -25,16 +25,9 @@ object ModelBuilder {
     val sparkConf = new SparkConf().setAppName("Model Builder")
     val sc = new SparkContext(sparkConf)
 
-    val corpus: RDD[String] = sc.parallelize("")
-    val file = sc.textFile(textFile)
-    file.foreach(corpus + _)
-
-    val documents: RDD[Seq[String]] = corpus.map(_.split("-------------------------").toSeq)
-
-    //val documents: RDD[String] = sc.textFile(textFile).
-    //  .map(_.split("").toSeq)
-    //  .compute()
-    //documents.cache()
+    val documents: RDD[Seq[String]] = sc.textFile(textFile).
+      map(_.split(" ").toSeq)
+    documents.cache()
 
     val hashingTF = new HashingTF()
     val tf: RDD[Vector] = hashingTF.transform(documents)
@@ -45,6 +38,7 @@ object ModelBuilder {
 
     //tfidf.foreach(elem => println(elem))
     documents.take(100).foreach(println(_))
+    tfidf.take(100).foreach((println(_)))
 
     println("SUCCESS 6.0")
   }
