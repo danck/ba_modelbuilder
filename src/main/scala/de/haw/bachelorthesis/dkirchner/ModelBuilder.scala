@@ -29,7 +29,7 @@ object ModelBuilder {
     val sparkConf = new SparkConf().setAppName("Model Builder")
     val sc = new SparkContext(sparkConf)
 
-    val conf = new org.apache.hadoop.conf.Configuration(sc.hadoopConfiguration)
+    val conf = sc.hadoopConfiguration
     conf.set("textinputformat.record.delimiter", "-------------------------")
     val input = sc.newAPIHadoopFile(textFile, classOf[TextInputFormat], classOf[LongWritable], classOf[Text], conf)
 
@@ -37,7 +37,7 @@ object ModelBuilder {
     //val documents: RDD[Seq[String]] = input
     val documents: RDD[String] = input
       .map (_._2.toString)
-      .map(_.replace('>','\n'))
+      .map(_.replace('\n',' '))
 /*      .map(_.split(" ").toSeq)
     documents.cache()
 
@@ -49,7 +49,7 @@ object ModelBuilder {
     val tfidf: RDD[Vector] = idf.transform(tf)
 
     //tfidf.foreach(elem => println(elem))*/
-    documents.take(100).foreach(println(_))
+    documents.take(10).foreach(println(_))
 
     println("SUCCESS 10.0")
   }
