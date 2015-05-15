@@ -41,6 +41,7 @@ object ModelBuilder {
     //tfidf.foreach(elem => println(elem))
     documents.take(100).foreach(println(_))
 
-    println("SUCCESS 4.0")
+    println("SUCCESS 5.0")
   }
+}
 }
