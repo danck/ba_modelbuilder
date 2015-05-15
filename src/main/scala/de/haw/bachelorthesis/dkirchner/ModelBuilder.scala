@@ -11,10 +11,6 @@ import org.apache.spark.SparkContext
 import org.apache.spark.mllib.feature.{IDF, HashingTF}
 import org.apache.spark.mllib.linalg.Vector
 
-import org.apache.hadoop.conf.Configuration
-import org.apache.hadoop.io.{LongWritable, Text}
-import org.apache.hadoop.mapreduce.lib.input.TextInputFormat
-
 /**
  *
  */
@@ -29,16 +25,8 @@ object ModelBuilder {
     val sparkConf = new SparkConf().setAppName("Model Builder")
     val sc = new SparkContext(sparkConf)
 
-    val conf = sc.hadoopConfiguration
-    conf.set("textinputformat.record.delimiter", "-------------------------")
-    val input = sc.newAPIHadoopFile(textFile, classOf[TextInputFormat], classOf[LongWritable], classOf[Text], conf)
-
-    //val documents: RDD[Seq[String]] = sc.textFile(textFile).
-    //val documents: RDD[Seq[String]] = input
-    val documents: RDD[String] = input
-      .map (_._2.toString)
-      .map(_.replace('\n',' '))
-/*      .map(_.split(" ").toSeq)
+    val documents: RDD[Seq[String]] = sc.textFile(textFile).
+      map(_.split(" ").toSeq)
     documents.cache()
 
     val hashingTF = new HashingTF()
@@ -48,9 +36,10 @@ object ModelBuilder {
     val idf = new IDF().fit(tf)
     val tfidf: RDD[Vector] = idf.transform(tf)
 
-    //tfidf.foreach(elem => println(elem))*/
-    documents.take(10).foreach(println(_))
+    //tfidf.foreach(elem => println(elem))
+    documents.take(100).foreach(println(_))
+    //tfidf.take(100).foreach((println(_)))
 
-    println("SUCCESS 10.0")
+    println("SUCCESS 11.0")
   }
 }
