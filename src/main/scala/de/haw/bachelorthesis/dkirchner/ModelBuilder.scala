@@ -11,6 +11,10 @@ import org.apache.spark.SparkContext
 import org.apache.spark.mllib.feature.{IDF, HashingTF}
 import org.apache.spark.mllib.linalg.Vector
 
+import org.apache.hadoop.conf.Configuration
+import org.apache.hadoop.io.{LongWritable, Text}
+import org.apache.hadoop.mapreduce.lib.input.TextInputFormat
+
 /**
  *
  */
@@ -25,8 +29,13 @@ object ModelBuilder {
     val sparkConf = new SparkConf().setAppName("Model Builder")
     val sc = new SparkContext(sparkConf)
 
-    val documents: RDD[Seq[String]] = sc.textFile(textFile).
-      map(_.split(" ").toSeq)
+    val conf = new Configuration(sc.hadoopConfiguration)
+    conf.set("textinputformat.record.delimiter", "\n")
+    val input = sc.newAPIHadoopFile("/spark_user_msgs.txt", classOf[TextInputFormat], classOf[LongWritable], classOf[Text], conf)
+
+    //val documents: RDD[Seq[String]] = sc.textFile(textFile).
+    val documents: RDD[Seq[String]] = input
+      .map {case (_, text) => text.toString.split(" ").toSeq }
     documents.cache()
 
     val hashingTF = new HashingTF()
@@ -38,8 +47,7 @@ object ModelBuilder {
 
     //tfidf.foreach(elem => println(elem))
     documents.take(100).foreach(println(_))
-    tfidf.take(100).foreach((println(_)))
 
-    println("SUCCESS 6.0")
+    println("SUCCESS 7.0")
   }
 }
