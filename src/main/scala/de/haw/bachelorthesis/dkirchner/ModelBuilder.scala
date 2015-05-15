@@ -37,14 +37,18 @@ object ModelBuilder {
     val tfidf: RDD[Vector] = idf.transform(tf)
 
     //tfidf.foreach(elem => println(elem))
-    println("---------DOCUMENTS----------")
+    /*println("---------DOCUMENTS----------")
     documents.take(10).foreach(println(_))
     println("---------TF----------")
     tf.foreach(println(_))
     println("---------IDF----------")
     println(idf.toString)
     println("---------TF-IDF----------")
-    tfidf.take(10).foreach((println(_)))
+    tfidf.take(10).foreach((println(_)))*/
+
+    println("index: " + hashingTF.indexOf("Spark"))
+    println("tf count: " + tf.count())
+
 
     println("SUCCESS 11.0")
   }
