@@ -26,7 +26,7 @@ object ModelBuilder {
     val sc = new SparkContext(sparkConf)
 
     val documents: RDD[Seq[String]] = sc.textFile(textFile)
-      .map(_.filter(_ >= ' '))
+      .map(_.replaceAll("\r\n", " "))
       .map(_.replaceAll("-------------------------", "\n"))
       .map(_.split(" ").toSeq)
     documents.cache()
@@ -41,6 +41,6 @@ object ModelBuilder {
     //tfidf.foreach(elem => println(elem))
     documents.take(100).foreach(println(_))
 
-    println("SUCCESS 5.0")
+    println("SUCCESS 3.0")
   }
 }
