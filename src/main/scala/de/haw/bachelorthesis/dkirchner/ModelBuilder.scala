@@ -27,6 +27,7 @@ object ModelBuilder {
 
     val documents: RDD[Seq[String]] = sc.textFile(textFile).map(_.split("-------------------------").toSeq)
     documents.cache()
+    val doc_count = documents.count()
 
     val hashingTF = new HashingTF()
     val tf: RDD[Vector] = hashingTF.transform(documents)
@@ -36,7 +37,7 @@ object ModelBuilder {
     val tfidf: RDD[Vector] = idf.transform(tf)
 
     //tfidf.foreach(elem => println(elem))
-    println(documents.count())
+    println("documents: "+ doc_count)
 
     println("SUCCESS")
   }
