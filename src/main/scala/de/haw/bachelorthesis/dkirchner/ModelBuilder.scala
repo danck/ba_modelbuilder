@@ -36,7 +36,7 @@ object ModelBuilder {
     //val documents: RDD[Seq[String]] = sc.textFile(textFile).
     val documents: RDD[Seq[String]] = input
       .map (_._2.toString)
-      .map(_.split(" ").toSeq)
+/*      .map(_.split(" ").toSeq)
     documents.cache()
 
     val hashingTF = new HashingTF()
@@ -46,7 +46,7 @@ object ModelBuilder {
     val idf = new IDF().fit(tf)
     val tfidf: RDD[Vector] = idf.transform(tf)
 
-    //tfidf.foreach(elem => println(elem))
+    //tfidf.foreach(elem => println(elem))*/
     documents.take(100).foreach(println(_))
 
     println("SUCCESS 9.0")
