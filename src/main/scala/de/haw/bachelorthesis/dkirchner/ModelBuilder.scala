@@ -25,9 +25,11 @@ object ModelBuilder {
     val sparkConf = new SparkConf().setAppName("Model Builder")
     val sc = new SparkContext(sparkConf)
 
-    val documents: RDD[Seq[String]] = sc.textFile(textFile).map(_.split(" ").toSeq)
+    val documents: RDD[Seq[String]] = sc.textFile(textFile)
+      .map(_.replace("\n", " "))
+      .map(_.replace("-------------------------", "\n"))
+      .map(_.split(" ").toSeq)
     documents.cache()
-    val doc_count = documents.count()
 
     val hashingTF = new HashingTF()
     val tf: RDD[Vector] = hashingTF.transform(documents)
