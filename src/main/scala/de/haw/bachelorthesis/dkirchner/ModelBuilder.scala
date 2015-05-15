@@ -16,16 +16,17 @@ import org.apache.spark.mllib.linalg.Vector
  */
 object ModelBuilder {
   def main (args: Array[String]) {
-    if (args.length < 2) {
-      System.err.println("Usage: ModelBuilder <master> <textfile>")
+    if (args.length < 1) {
+      System.err.println("Usage: ModelBuilder <textfile>")
       System.exit(1)
     }
 
-    val Array(master, textFile) = args.take(2)
-    val sparkConf = new SparkConf().setAppName("Model Builder").setMaster(master)
+    val Array(textFile) = args.take(1)
+    val sparkConf = new SparkConf().setAppName("Model Builder")
     val sc = new SparkContext(sparkConf)
 
     val documents: RDD[Seq[String]] = sc.textFile(textFile).map(_.split("-------------------------").toSeq)
+    documents.cache()
 
     val hashingTF = new HashingTF()
     val tf: RDD[Vector] = hashingTF.transform(documents)
@@ -34,7 +35,8 @@ object ModelBuilder {
     val idf = new IDF().fit(tf)
     val tfidf: RDD[Vector] = idf.transform(tf)
 
-    tfidf.foreach(elem => println(elem))
+    //tfidf.foreach(elem => println(elem))
+    println(documents.count())
 
     println("SUCCESS")
   }
