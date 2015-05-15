@@ -31,7 +31,7 @@ object ModelBuilder {
 
     val conf = new Configuration(sc.hadoopConfiguration)
     conf.set("textinputformat.record.delimiter", "\n")
-    val input = sc.newAPIHadoopFile("/spark_user_msgs.txt", classOf[TextInputFormat], classOf[LongWritable], classOf[Text], conf)
+    val input = sc.newAPIHadoopFile(textFile, classOf[TextInputFormat], classOf[LongWritable], classOf[Text], conf)
 
     //val documents: RDD[Seq[String]] = sc.textFile(textFile).
     val documents: RDD[Seq[String]] = input
