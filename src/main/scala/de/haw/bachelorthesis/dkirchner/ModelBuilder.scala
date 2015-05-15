@@ -37,6 +37,7 @@ object ModelBuilder {
     //val documents: RDD[Seq[String]] = input
     val documents: RDD[String] = input
       .map (_._2.toString)
+      .map(_.replace('\n',' '))
 /*      .map(_.split(" ").toSeq)
     documents.cache()
 
