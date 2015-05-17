@@ -54,7 +54,9 @@ object ModelBuilder {
     println("########## tf count: " + tf.count())
     println("########## index of Spark in TF: " + hashingTF.indexOf("Spark"))
     println("########## first 100: ")
-    tfidf.take(100).foreach(vector => println(vector.apply(hashingTF.indexOf("Spark".toLowerCase))))
+    tfidf.take(100).foreach(vector =>
+      println(vector.apply(hashingTF.indexOf("SPARK".toLowerCase))))
+    println("Spark.## : " + "Spark".##)
 
     //Vectors.sparse(12, Array(1,2,3), Array(0.0, 0.1, 0.2)).apply(1)
 
