@@ -9,7 +9,9 @@ import org.apache.spark.SparkConf
 import org.apache.spark.rdd.RDD
 import org.apache.spark.SparkContext
 import org.apache.spark.mllib.feature.{IDF, HashingTF}
-import org.apache.spark.mllib.linalg.Vector
+import org.apache.spark.mllib.linalg.{Vectors, Vector}
+import org.apache.spark.util.Utils
+
 
 /**
  *
@@ -26,8 +28,8 @@ object ModelBuilder {
     val sc = new SparkContext(sparkConf)
 
     val documents: RDD[Seq[String]] = sc.textFile(textFile)
+      .filter(_.size > 15)
       .map(_.toLowerCase())
-      //.filter(_)
       .map(_.split(" ").toSeq)
     documents.cache()
 
@@ -51,8 +53,10 @@ object ModelBuilder {
 
     println("########## tf count: " + tf.count())
     println("########## index of Spark in TF: " + hashingTF.indexOf("Spark"))
-    println("########## last 10: ")
-    tfidf.take(10).foreach(println(_))
+    println("########## first 100: ")
+    tfidf.take(100).foreach(vector => println(vector.apply(hashingTF.indexOf("Spark".toLowerCase))))
+
+    //Vectors.sparse(12, Array(1,2,3), Array(0.0, 0.1, 0.2)).apply(1)
 
 
     println("SUCCESS 11.0")
