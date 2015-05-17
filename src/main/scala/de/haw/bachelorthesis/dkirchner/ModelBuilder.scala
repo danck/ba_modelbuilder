@@ -72,7 +72,7 @@ object ModelBuilder {
     oos.close
     // (3) read the object back in
     val ois = new ObjectInputStream(new FileInputStream("/tmp/tfidf"))
-    val stock = ois.readObject.asInstanceOf[Array]
+    val stock = ois.readObject.asInstanceOf[Array[Vector]]
     ois.close
     // (4) print the object that was read back in
     println(stock)
