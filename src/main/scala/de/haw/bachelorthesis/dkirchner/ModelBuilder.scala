@@ -46,8 +46,10 @@ object ModelBuilder {
     println("---------TF-IDF----------")
     tfidf.take(10).foreach((println(_)))*/
 
-    println("index: " + hashingTF.indexOf("Spark"))
+    tfidf
+
     println("tf count: " + tf.count())
+    println("index: " + hashingTF.indexOf("Spark"))
 
 
     println("SUCCESS 11.0")
