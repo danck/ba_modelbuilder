@@ -51,7 +51,8 @@ object ModelBuilder {
 
     println("########## tf count: " + tf.count())
     println("########## index of Spark in TF: " + hashingTF.indexOf("Spark"))
-    println("########## last 10: " + tfidf.take(10))
+    println("########## last 10: ")
+    tfidf.take(10).foreach(println(_))
 
 
     println("SUCCESS 11.0")
