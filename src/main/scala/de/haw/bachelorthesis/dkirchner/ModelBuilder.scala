@@ -25,8 +25,10 @@ object ModelBuilder {
     val sparkConf = new SparkConf().setAppName("Model Builder")
     val sc = new SparkContext(sparkConf)
 
-    val documents: RDD[Seq[String]] = sc.textFile(textFile).
-      map(_.split(" ").toSeq)
+    val documents: RDD[Seq[String]] = sc.textFile(textFile)
+      .map(_.toLowerCase())
+      //.filter(_)
+      .map(_.split(" ").toSeq)
     documents.cache()
 
     val hashingTF = new HashingTF()
@@ -46,10 +48,9 @@ object ModelBuilder {
     println("---------TF-IDF----------")
     tfidf.take(10).foreach((println(_)))*/
 
-    tfidf
-
-    println("tf count: " + tf.count())
-    println("index: " + hashingTF.indexOf("Spark"))
+    println("########## tf count: " + tf.count())
+    println("########## index of Spark in TF: " + hashingTF.indexOf("Spark"))
+    println("########## last 10: " + tfidf.take(10))
 
 
     println("SUCCESS 11.0")
