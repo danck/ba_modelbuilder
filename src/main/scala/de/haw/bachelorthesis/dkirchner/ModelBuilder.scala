@@ -37,6 +37,7 @@ object ModelBuilder {
     tf.cache()
     val idf = new IDF().fit(tf)
     val tfidf: RDD[Vector] = idf.transform(tf)
+    tfidf.cache()
 
     //tfidf.foreach(elem => println(elem))
     /*println("---------DOCUMENTS----------")
