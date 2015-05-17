@@ -59,13 +59,13 @@ object ModelBuilder {
     println("########## tf count: " + tf.count())
     println("########## index of Spark in TF: " + hashingTF.indexOf("Spark"))
     println("########## first 100: ")
-    tfidf.take(100).foreach(vector =>
-      println(vector.apply(hashingTF.indexOf("SPARK".toLowerCase))))
     println("Spark.## : " + "Spark".##)
 
     //Vectors.sparse(12, Array(1,2,3), Array(0.0, 0.1, 0.2)).apply(1)
 
     val relevanceVectors = tfidf.take(docWindowSize)
+    relevanceVectors.take(100).foreach(vector =>
+      println("Before: Value for \"Spark\" " + vector.apply(hashingTF.indexOf("Spark".toLowerCase))))
 
     // (2) write the instance out to a file
     val oos = new ObjectOutputStream(new FileOutputStream("/tmp/tfidf"))
@@ -76,8 +76,8 @@ object ModelBuilder {
     val stock = ois.readObject.asInstanceOf[Array[Vector]]
     ois.close
     // (4) print the object that was read back in
-    stock.foreach(vector =>
-      println(vector.apply(hashingTF.indexOf("SPARK".toLowerCase))))
+    stock.take(100).foreach(vector =>
+      println("After: Value for \"Spark\" " + vector.apply(hashingTF.indexOf("Spark".toLowerCase))))
 
     println("Success " + Calendar.getInstance().getTime())
   }
