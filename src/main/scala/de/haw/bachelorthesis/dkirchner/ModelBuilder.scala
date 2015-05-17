@@ -5,6 +5,8 @@ package de.haw.bachelorthesis.dkirchner
  * Created by Daniel on 12.05.2015.
  */
 
+import java.io.{FileInputStream, ObjectInputStream, FileOutputStream, ObjectOutputStream}
+
 import org.apache.spark.SparkConf
 import org.apache.spark.rdd.RDD
 import org.apache.spark.SparkContext
@@ -17,6 +19,8 @@ import org.apache.spark.util.Utils
  *
  */
 object ModelBuilder {
+  val docWindowSize: Integer = 500
+
   def main (args: Array[String]) {
     if (args.length < 1) {
       System.err.println("Usage: ModelBuilder <textfile>")
@@ -60,6 +64,18 @@ object ModelBuilder {
 
     //Vectors.sparse(12, Array(1,2,3), Array(0.0, 0.1, 0.2)).apply(1)
 
+    val relevanceVectors = tfidf.take(docWindowSize)
+
+    // (2) write the instance out to a file
+    val oos = new ObjectOutputStream(new FileOutputStream("/tmp/tfidf"))
+    oos.writeObject(relevanceVectors)
+    oos.close
+    // (3) read the object back in
+    val ois = new ObjectInputStream(new FileInputStream("/tmp/tfidf"))
+    val stock = ois.readObject.asInstanceOf[Array]
+    ois.close
+    // (4) print the object that was read back in
+    println(stock)
 
     println("SUCCESS 11.0")
   }
