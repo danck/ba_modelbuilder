@@ -6,6 +6,7 @@ package de.haw.bachelorthesis.dkirchner
  */
 
 import java.io.{FileInputStream, ObjectInputStream, FileOutputStream, ObjectOutputStream}
+import java.util.Calendar
 
 import org.apache.spark.SparkConf
 import org.apache.spark.rdd.RDD
@@ -75,8 +76,9 @@ object ModelBuilder {
     val stock = ois.readObject.asInstanceOf[Array[Vector]]
     ois.close
     // (4) print the object that was read back in
-    println(stock)
+    stock.foreach(vector =>
+      println(vector.apply(hashingTF.indexOf("SPARK".toLowerCase))))
 
-    println("SUCCESS 11.0")
+    println("Success " + Calendar.getInstance().getTime())
   }
 }
