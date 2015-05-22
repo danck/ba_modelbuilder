@@ -35,7 +35,7 @@ object ModelBuilder {
     val documents: RDD[Seq[String]] = sc.textFile(textFile)
       .filter(_.size > 15)
       .map(_.toLowerCase())
-      .map(_.split(" ").toSeq)
+      .map(_.split(" ").toSeq) //Sonderzeichen rausnehmen
     documents.cache()
 
     val hashingTF = new HashingTF()
