@@ -85,15 +85,4 @@ object ModelBuilder {
 
     println("Success " + Calendar.getInstance().getTime())
   }
-
-  def mergeVectors(v1: SparseVector, v2: SparseVector): SparseVector = {
-    val indices1 = v1.toArray.apply(1)
-    val indices2 = v2.toArray.apply(1)
-    val values1 = v1.toArray.apply(2)
-    val values2 = v2.toArray.apply(2)
-
-    val indices =
-
-    Vectors.sparse(v1.size, Array(12,34), Array(4,6))
-  }
 }
