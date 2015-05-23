@@ -12,7 +12,7 @@ import org.apache.spark.SparkConf
 import org.apache.spark.rdd.RDD
 import org.apache.spark.SparkContext
 import org.apache.spark.mllib.feature.{IDF, HashingTF}
-import org.apache.spark.mllib.linalg.{Vectors, Vector}
+import org.apache.spark.mllib.linalg.{SparseVector, Vectors, Vector}
 import org.apache.spark.util.Utils
 
 
@@ -65,7 +65,10 @@ object ModelBuilder {
 
     val relevanceVectors = tfidf.take(docWindowSize)
     relevanceVectors.take(100).foreach(vector =>
-      println("Before: Value for \"Spark\" " + vector.apply(hashingTF.indexOf("Spark".toLowerCase))))
+      println("Before: Value for \"Spark\" " + vector.apply(hashingTF.indexOf("Spark".toLowerCase)))
+    )
+
+    val relevanceVector = tfidf.take(docWindowSize) //.reduce((a, b) => mergeVectors(a,b))
 
     // (2) write the instance out to a file
     val oos = new ObjectOutputStream(new FileOutputStream("/tmp/tfidf"))
@@ -77,8 +80,20 @@ object ModelBuilder {
     ois.close
     // (4) print the object that was read back in
     stock.take(100).foreach(vector =>
-      println("After: Value for \"Spark\" " + vector.apply(hashingTF.indexOf("Spark".toLowerCase))))
+      println(vector.toString + ":\n" + "After: Value for \"Spark\" " + vector.apply(hashingTF.indexOf("Spark".toLowerCase)))
+    )
 
     println("Success " + Calendar.getInstance().getTime())
+  }
+
+  def mergeVectors(v1: SparseVector, v2: SparseVector): SparseVector = {
+    val indices1 = v1.toArray.apply(1)
+    val indices2 = v2.toArray.apply(1)
+    val values1 = v1.toArray.apply(2)
+    val values2 = v2.toArray.apply(2)
+
+    val indices =
+
+    Vectors.sparse(v1.size, Array(12,34), Array(4,6))
   }
 }
