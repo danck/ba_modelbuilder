@@ -80,7 +80,11 @@ object ModelBuilder {
     ois.close
     // (4) print the object that was read back in
     stock.take(100).foreach(vector =>
-      println(vector.toString + ":\n" + "After: Value for \"Spark\" " + vector.apply(hashingTF.indexOf("Spark".toLowerCase)))
+      println(
+        vector.toArray.apply(0).toString + ":\n" +
+        vector.toArray.apply(1).toString + ":\n" +
+        vector.toArray.apply(2).toString + ":\n" +
+        "After: Value for \"Spark\" " + vector.apply(hashingTF.indexOf("Spark".toLowerCase)))
     )
 
     println("Success " + Calendar.getInstance().getTime())
