@@ -56,11 +56,6 @@ object ModelBuilder {
     println("---------TF-IDF----------")
     tfidf.take(10).foreach((println(_)))*/
 
-    println("########## tf count: " + tf.count())
-    println("########## index of Spark in TF: " + hashingTF.indexOf("Spark"))
-    println("########## first 100: ")
-    println("Spark.## : " + "Spark".##)
-
     Vectors.sparse(12, Array(1,2,3), Array(0.0, 0.1, 0.2))
 
     val relevanceVectors = tfidf.take(docWindowSize)
@@ -88,6 +83,9 @@ object ModelBuilder {
     println(
         "After: Value for \"Spark\" " + reducedRelVec.apply(hashingTF.indexOf("Spark".toLowerCase))
     )
+
+    println("########## red vec size: " + tf.count())
+    println("########## index of Spark in TF: " + hashingTF.indexOf("Spark"))
 
     println("Success " + Calendar.getInstance().getTime())
   }
