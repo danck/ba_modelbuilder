@@ -8,6 +8,11 @@ package de.haw.bachelorthesis.dkirchner
 import java.io._
 import java.util.Calendar
 
+import javax.mail._
+import javax.mail.internet._
+import javax.mail.search._
+import java.util.Properties
+
 import org.apache.spark.SparkConf
 import org.apache.spark.rdd.RDD
 import org.apache.spark.SparkContext
