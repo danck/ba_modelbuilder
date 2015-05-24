@@ -4,7 +4,7 @@
 		module="model-builder$sources_javadoc_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20150524080351"
+		publication="20150524193501"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -535,6 +535,10 @@
 		<dependency org="org.spire-math" name="spire-macros_2.10" rev="0.7.4" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="spire-macros_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="spire-macros_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="javax.mail" name="javax.mail-api" rev="1.5.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="javax.mail-api" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="javax.mail-api" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
 		<dependency org="commons-net" name="commons-net" rev="3.1" transitive="false" conf="runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="commons-net" type="src" ext="jar" conf="sources" e:classifier="sources"/>

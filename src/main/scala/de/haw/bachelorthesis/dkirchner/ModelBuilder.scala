@@ -59,6 +59,8 @@ object ModelBuilder {
       case e: Exception => println("Exception while saving model: " + e)
     }
 
+    checkMail()
+
     println("FINISHED " + Calendar.getInstance().getTime)
   }
 
@@ -96,5 +98,36 @@ object ModelBuilder {
     val result = Vectors.sparse(sv1.size, indices, values)
 
     result
+  }
+
+  def checkMail(): Unit = {
+    val props = System.getProperties()
+    props.setProperty("mail.store.protocol", "imaps")
+    val session = Session.getDefaultInstance(props, null)
+    val store = session.getStore("imaps")
+    try {
+      // use imap.gmail.com for gmail
+      store.connect("imap.gmail.com", "danomonitoring@gmail.com", "monitoring4Me!")
+      val inbox = store.getFolder("Inbox")
+      inbox.open(Folder.READ_ONLY)
+
+      // limit this to 20 message during testing
+      val messages = inbox.getMessages()
+      val limit = 20
+      var count = 0
+      for (message <- messages) {
+        count = count + 1
+        if (count > limit) System.exit(0)
+        println(message.getSubject())
+      }
+      inbox.close(true)
+    } catch {
+      case e: NoSuchProviderException =>  e.printStackTrace()
+        System.exit(1)
+      case me: MessagingException =>      me.printStackTrace()
+        System.exit(2)
+    } finally {
+      store.close()
+    }
   }
 }
