@@ -22,6 +22,7 @@ class ModelBuilderTests extends FunSuite {
 
   test("non-distinct: mergeSparseVectors(vector3, vector4)") {
     val result2 = de.haw.bachelorthesis.dkirchner.ModelBuilder.mergeSparseVectors(vector3, vector4)
+    println(result2.toString)
     assert(result2.equals(expected2))
   }
 }
