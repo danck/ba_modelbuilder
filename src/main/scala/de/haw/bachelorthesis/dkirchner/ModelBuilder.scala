@@ -108,7 +108,7 @@ object ModelBuilder {
     val indices2 = sv2.getIndices
     //val values2 = sv2.getValues
 
-    val indices = indices1.union(indices2)
+    val indices = indices1.union(indices2).distinct.sorted
     val values = indices.map(index => sv1.apply(index) + sv2.apply(index))
 
     if (indices.length != values.length)
