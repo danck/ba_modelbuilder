@@ -33,8 +33,8 @@ object ModelBuilder {
     val sc = new SparkContext(sparkConf)
 
     val documents: RDD[Seq[String]] = sc.textFile(textFile)
-      .filter(_.size > 15)
-      .map(_.toLowerCase())
+      .filter(_.length > 15)
+      .map(_.toLowerCase)
       .map(_.split(" ").toSeq) //Sonderzeichen rausnehmen
     documents.cache()
 
@@ -46,41 +46,43 @@ object ModelBuilder {
     val tfidf: RDD[Vector] = idf.transform(tf)
     tfidf.cache()
 
-    val relevanceVectors = tfidf.take(docWindowSize)
-    relevanceVectors.take(100).foreach(vector =>
-      println("Before: Value for \"Spark\" " + vector.apply(hashingTF.indexOf("Spark".toLowerCase)))
-    )
+    val relevanceVectorsRDD = tfidf.take(docWindowSize)
+//    relevanceVectorsRDD.take(100).foreach(vector =>
+//      println("Before: Value for \"Spark\" " + vector.apply(hashingTF.indexOf("Spark".toLowerCase)))
+//    )
 
-    val relevanceVector = tfidf.take(docWindowSize) //.reduce((a, b) => mergeVectors(a,b))
+    val relevanceVectors = tfidf
+      .take(docWindowSize)
+      .reduce((vector1, vector2) =>
+        mergeSparseVectors(vector1.asInstanceOf[SparseVector], vector2.asInstanceOf[SparseVector])
+      )
 
     // (2) write the instance out to a file
     val oos = new ObjectOutputStream(new FileOutputStream("/tmp/tfidf"))
     oos.writeObject(relevanceVectors)
-    oos.close
+    oos.close()
     // (3) read the object back in
     val ois = new ObjectInputStream(new FileInputStream("/tmp/tfidf"))
-    val stock = ois.readObject.asInstanceOf[Array[SparseVector]]
-    ois.close
+    val model = ois.readObject.asInstanceOf[Seq]
+    ois.close()
     // (4) print the object that was read back in
-    val reducedRelVec = stock.take(100)
-      .reduce((elem1, elem2) =>
-        mergeSparseVectors(elem1, elem2)
-    )
 
-    println(reducedRelVec.toString)
+    println(model.toString())
     println(
-        "Value for \"Spark\" " + reducedRelVec.apply(hashingTF.indexOf("Spark".toLowerCase))
-          + "\nSize: " + reducedRelVec.size
-          + "\nSize Indices: " + reducedRelVec.asInstanceOf[SparseVector].getIndices.length
-          + "\nSize Values: " + reducedRelVec.asInstanceOf[SparseVector].getValues.length
+        "Value for \"Spark\" " + model.apply(hashingTF.indexOf("Spark".toLowerCase))
+          + "\nSize: " + model.size
+          + "\nSize Indices: " + model.asInstanceOf[SparseVector].getIndices.length
+          + "\nSize Values: " + model.asInstanceOf[SparseVector].getValues.length
     )
-
-    println("########## red vec size: " + tf.count())
-    println("########## index of Spark in TF: " + hashingTF.indexOf("Spark"))
-
-    println("Success " + Calendar.getInstance().getTime())
+    println("Success " + Calendar.getInstance().getTime)
   }
 
+  /**
+   * Extends the class Spark SparseVector implementation by attribute getters.
+   *
+   * This is a helper class for mergeSparseVectors
+   * @param sv
+   */
   implicit class UnifiableSparseVector(sv: SparseVector) {
     def unifiableSparseVector: (Int, Array[Int], Array[Double]) = {
       (sv.size, sv.indices, sv.values)
@@ -90,6 +92,13 @@ object ModelBuilder {
     def getValues = sv.values
   }
 
+  /**
+   * Unifies two sparse vectors of the same length by adding their values at
+   * each index
+   * @param sv1
+   * @param sv2
+   * @return Vector that is the union of sv1 and sv2
+   */
   def mergeSparseVectors(sv1: SparseVector, sv2: SparseVector): Vector = {
     if (sv1.size != sv2.size)
       throw  new IllegalArgumentException("Input vectors must be of equal size")
