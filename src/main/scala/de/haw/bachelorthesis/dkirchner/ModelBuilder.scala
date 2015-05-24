@@ -63,7 +63,7 @@ object ModelBuilder {
     oos.close()
     // (3) read the object back in
     val ois = new ObjectInputStream(new FileInputStream("/tmp/tfidf"))
-    val model = ois.readObject.asInstanceOf[Seq]
+    val model = ois.readObject.asInstanceOf[SparseVector]
     ois.close()
     // (4) print the object that was read back in
 
