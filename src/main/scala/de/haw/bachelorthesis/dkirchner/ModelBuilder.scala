@@ -112,7 +112,7 @@ object ModelBuilder {
     val store = session.getStore("imaps")
     try {
       // use imap.gmail.com for gmail
-      store.connect("imap.gmail.com", "danomonitoring@googlemail.com", "monitoring4me!")
+      store.connect("imap.gmail.com", "danomonitoring@googlemail.com", "monitoring4Me!")
       val inbox = store.getFolder("Inbox")
       inbox.open(Folder.READ_ONLY)
 
