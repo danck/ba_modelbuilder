@@ -109,8 +109,11 @@ object ModelBuilder {
     //val values2 = sv2.getValues
 
     val indices = indices1.union(indices2)
-
     val values = indices.map(index => sv1.apply(index) + sv2.apply(index))
+
+    if (indices.length != values.length)
+      throw new IllegalArgumentException("Length of indices and values must be equal but is "
+        + indices.length + "(Indices) " + values.length + "(Values)")
 
     val result = Vectors.sparse(sv1.size, indices, values)
 
