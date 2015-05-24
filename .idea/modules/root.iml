@@ -170,5 +170,6 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="library" scope="TEST" name="SBT: org.scalatest:scalatest_2.10:2.0:jar" level="project" />
   </component>
 </module>

@@ -6,7 +6,8 @@ lazy val root = (project in file(".")).
     mainClass in Compile := Some("de.haw.bachelorthesis.dkirchner.ModelBuilder"),
     libraryDependencies ++= Seq(
       "org.apache.spark" %% "spark-core" % "1.3.0" % "provided",
-      "org.apache.spark" % "spark-mllib_2.10" % "1.3.0"
+      "org.apache.spark" % "spark-mllib_2.10" % "1.3.0",
+      "org.scalatest" % "scalatest_2.10" % "2.0" % "test"
     )
   )
 
