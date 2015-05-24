@@ -61,7 +61,7 @@ object ModelBuilder {
     println("########## first 100: ")
     println("Spark.## : " + "Spark".##)
 
-    //Vectors.sparse(12, Array(1,2,3), Array(0.0, 0.1, 0.2)).apply(1)
+    Vectors.sparse(12, Array(1,2,3), Array(0.0, 0.1, 0.2))
 
     val relevanceVectors = tfidf.take(docWindowSize)
     relevanceVectors.take(100).foreach(vector =>
@@ -79,14 +79,43 @@ object ModelBuilder {
     val stock = ois.readObject.asInstanceOf[Array[Vector]]
     ois.close
     // (4) print the object that was read back in
-    stock.take(100).foreach(vector =>
-      println(
-        vector.toArray.apply(0).toString + ":\n" +
-        vector.toArray.apply(1).toString + ":\n" +
-        vector.toArray.apply(2).toString + ":\n" +
-        "After: Value for \"Spark\" " + vector.apply(hashingTF.indexOf("Spark".toLowerCase)))
+    val reducedRelVec = stock.take(100)
+      .reduce((elem1, elem2) =>
+        mergeSparseVectors(elem1.asInstanceOf[SparseVector], elem2.asInstanceOf[SparseVector])
+    )
+
+    println(reducedRelVec.toString)
+    println(
+        "After: Value for \"Spark\" " + reducedRelVec.apply(hashingTF.indexOf("Spark".toLowerCase))
     )
 
     println("Success " + Calendar.getInstance().getTime())
+  }
+
+  implicit class UnifiableSparseVector(sv: SparseVector) {
+    def unifiableSparseVector: (Int, Array[Int], Array[Double]) = {
+      (sv.size, sv.indices, sv.values)
+    }
+
+    def getIndices = sv.indices
+    def getValues = sv.values
+  }
+
+  def mergeSparseVectors(sv1: SparseVector, sv2: SparseVector): Vector = {
+    if (sv1.size != sv2.size)
+      throw  new IllegalArgumentException("Input vectors must be of equal size")
+
+    val indices1 = sv1.getIndices
+    //val values1 = sv1.getValues
+    val indices2 = sv2.getIndices
+    //val values2 = sv2.getValues
+
+    val indices = indices1.union(indices2)
+
+    val values = indices.map(index => sv1.apply(index) + sv2.apply(index))
+
+    val result = Vectors.sparse(sv1.size, indices, values)
+
+    result
   }
 }
