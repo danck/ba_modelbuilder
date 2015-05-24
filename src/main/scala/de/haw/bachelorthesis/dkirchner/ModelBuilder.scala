@@ -36,7 +36,7 @@ object ModelBuilder {
       .map(_.toLowerCase)
       .map(_.split(" ").toSeq) //Sonderzeichen rausnehmen
 
-    var hashingTF = new HashingTF(2^30)
+    val hashingTF = new HashingTF(1 << 30)
     val tf: RDD[Vector] = hashingTF.transform(documents)
 
     tf.cache()
