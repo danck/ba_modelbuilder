@@ -46,18 +46,6 @@ object ModelBuilder {
     val tfidf: RDD[Vector] = idf.transform(tf)
     tfidf.cache()
 
-    //tfidf.foreach(elem => println(elem))
-    /*println("---------DOCUMENTS----------")
-    documents.take(10).foreach(println(_))
-    println("---------TF----------")
-    tf.foreach(println(_))
-    println("---------IDF----------")
-    println(idf.toString)
-    println("---------TF-IDF----------")
-    tfidf.take(10).foreach((println(_)))*/
-
-    Vectors.sparse(12, Array(1,2,3), Array(0.0, 0.1, 0.2))
-
     val relevanceVectors = tfidf.take(docWindowSize)
     relevanceVectors.take(100).foreach(vector =>
       println("Before: Value for \"Spark\" " + vector.apply(hashingTF.indexOf("Spark".toLowerCase)))
@@ -71,17 +59,20 @@ object ModelBuilder {
     oos.close
     // (3) read the object back in
     val ois = new ObjectInputStream(new FileInputStream("/tmp/tfidf"))
-    val stock = ois.readObject.asInstanceOf[Array[Vector]]
+    val stock = ois.readObject.asInstanceOf[Array[SparseVector]]
     ois.close
     // (4) print the object that was read back in
     val reducedRelVec = stock.take(100)
       .reduce((elem1, elem2) =>
-        mergeSparseVectors(elem1.asInstanceOf[SparseVector], elem2.asInstanceOf[SparseVector])
+        mergeSparseVectors(elem1, elem2)
     )
 
     println(reducedRelVec.toString)
     println(
-        "After: Value for \"Spark\" " + reducedRelVec.apply(hashingTF.indexOf("Spark".toLowerCase))
+        "Value for \"Spark\" " + reducedRelVec.apply(hashingTF.indexOf("Spark".toLowerCase))
+          + "\nSize: " + reducedRelVec.size
+          + "\nSize Indices: " + reducedRelVec.asInstanceOf[SparseVector].getIndices.length
+          + "\nSize Values: " + reducedRelVec.asInstanceOf[SparseVector].getValues.length
     )
 
     println("########## red vec size: " + tf.count())
