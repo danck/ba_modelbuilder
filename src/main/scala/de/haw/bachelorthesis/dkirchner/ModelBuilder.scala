@@ -116,7 +116,7 @@ object ModelBuilder {
     try {
       store.connect("imap.gmail.com", "danomonitoring@googlemail.com", "monitoring4Me!")
       val inbox = store.getFolder("Inbox")
-      inbox.open(Folder.READ_ONLY)
+      inbox.open(Folder.READ_WRITE)
 
       // limit this to 20 message during testing
       val messages = inbox.getMessages()
