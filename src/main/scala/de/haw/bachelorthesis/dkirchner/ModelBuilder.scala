@@ -5,7 +5,7 @@ package de.haw.bachelorthesis.dkirchner
  * Created by Daniel on 12.05.2015.
  */
 
-import java.io.{FileInputStream, ObjectInputStream, FileOutputStream, ObjectOutputStream}
+import java.io._
 import java.util.Calendar
 
 import org.apache.spark.SparkConf
@@ -13,14 +13,13 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.SparkContext
 import org.apache.spark.mllib.feature.{IDF, HashingTF}
 import org.apache.spark.mllib.linalg.{SparseVector, Vectors, Vector}
-import org.apache.spark.util.Utils
 
 
 /**
  *
  */
 object ModelBuilder {
-  val docWindowSize: Integer = 500
+  val docWindowSize: Integer = 1500
 
   def main (args: Array[String]) {
     if (args.length < 1) {
@@ -36,52 +35,37 @@ object ModelBuilder {
       .filter(_.length > 15)
       .map(_.toLowerCase)
       .map(_.split(" ").toSeq) //Sonderzeichen rausnehmen
-    documents.cache()
 
     val hashingTF = new HashingTF()
     val tf: RDD[Vector] = hashingTF.transform(documents)
 
     tf.cache()
+
     val idf = new IDF().fit(tf)
     val tfidf: RDD[Vector] = idf.transform(tf)
-    tfidf.cache()
 
-    val relevanceVectorsRDD = tfidf.take(docWindowSize)
-//    relevanceVectorsRDD.take(100).foreach(vector =>
-//      println("Before: Value for \"Spark\" " + vector.apply(hashingTF.indexOf("Spark".toLowerCase)))
-//    )
-
-    val relevanceVectors = tfidf
+    val relevanceVector = tfidf
       .take(docWindowSize)
       .reduce((vector1, vector2) =>
         mergeSparseVectors(vector1.asInstanceOf[SparseVector], vector2.asInstanceOf[SparseVector])
       )
 
-    // (2) write the instance out to a file
-    val oos = new ObjectOutputStream(new FileOutputStream("/tmp/tfidf"))
-    oos.writeObject(relevanceVectors)
-    oos.close()
-    // (3) read the object back in
-    val ois = new ObjectInputStream(new FileInputStream("/tmp/tfidf"))
-    val model = ois.readObject.asInstanceOf[SparseVector]
-    ois.close()
-    // (4) print the object that was read back in
+    // (2) write the model instance out to a file
+    try {
+      val oos = new ObjectOutputStream(new FileOutputStream("/tmp/tfidf"))
+      oos.writeObject(relevanceVector)
+      oos.close()
+    } catch {
+      case e: Exception => println("Exception while saving model: " + e)
+    }
 
-    println(model.toString())
-    println(
-        "Value for \"Spark\" " + model.apply(hashingTF.indexOf("Spark".toLowerCase))
-          + "\nSize: " + model.size
-          + "\nSize Indices: " + model.asInstanceOf[SparseVector].getIndices.length
-          + "\nSize Values: " + model.asInstanceOf[SparseVector].getValues.length
-    )
-    println("Success " + Calendar.getInstance().getTime)
+    println("FINISHED " + Calendar.getInstance().getTime)
   }
 
   /**
    * Extends the class Spark SparseVector implementation by attribute getters.
-   *
-   * This is a helper class for mergeSparseVectors
-   * @param sv
+   * This is a helper class for the local method mergeSparseVectors
+   * @param sv Regular SparseVector to be extended
    */
   implicit class UnifiableSparseVector(sv: SparseVector) {
     def unifiableSparseVector: (Int, Array[Int], Array[Double]) = {
@@ -95,8 +79,8 @@ object ModelBuilder {
   /**
    * Unifies two sparse vectors of the same length by adding their values at
    * each index
-   * @param sv1
-   * @param sv2
+   * @param sv1 unifiableSparseVector
+   * @param sv2 unifiableSparseVector
    * @return Vector that is the union of sv1 and sv2
    */
   def mergeSparseVectors(sv1: SparseVector, sv2: SparseVector): Vector = {
@@ -104,16 +88,10 @@ object ModelBuilder {
       throw  new IllegalArgumentException("Input vectors must be of equal size")
 
     val indices1 = sv1.getIndices
-    //val values1 = sv1.getValues
     val indices2 = sv2.getIndices
-    //val values2 = sv2.getValues
 
     val indices = indices1.union(indices2).distinct.sorted
     val values = indices.map(index => sv1.apply(index) + sv2.apply(index))
-
-    if (indices.length != values.length)
-      throw new IllegalArgumentException("Length of indices and values must be equal but is "
-        + indices.length + "(Indices) " + values.length + "(Values)")
 
     val result = Vectors.sparse(sv1.size, indices, values)
 
