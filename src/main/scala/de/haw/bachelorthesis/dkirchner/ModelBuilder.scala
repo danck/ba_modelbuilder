@@ -56,12 +56,15 @@ object ModelBuilder {
       )
 
     // (2) write the model instance out to a file
+    val oos = new ObjectOutputStream(new FileOutputStream("/tmp/tfidf"))
     try {
-      val oos = new ObjectOutputStream(new FileOutputStream("/tmp/tfidf"))
       oos.writeObject(relevanceVector)
-      oos.close()
     } catch {
-      case e: Exception => println("Exception while saving model: " + e)
+      case e: Exception => println("Exception while saving model:")
+        e.printStackTrace()
+        System.exit(1)
+    } finally {
+      oos.close()
     }
 
     checkMail()
@@ -123,6 +126,7 @@ object ModelBuilder {
         count = count + 1
         if (count > limit) System.exit(0)
         println(message.getSubject())
+        message.setFlag(Flags.Flag.DELETED, true)
       }
       inbox.close(true)
     } catch {
