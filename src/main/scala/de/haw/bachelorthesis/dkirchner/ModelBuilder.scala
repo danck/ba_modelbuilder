@@ -137,8 +137,12 @@ object ModelBuilder {
                 val bodyLines = bodyString.split('\n')
                   .filter(line => !line.trim.startsWith(">")) // remove quoted lines
                   .filter(line => !line.trim.startsWith("<")) // remove html tags
+                  .filter(line => !line.trim.startsWith("On"))
                 val cleanLines = bodyLines.map(line => line.stripLineEnd) // remove control characters
-                val cleanText = if (cleanLines.nonEmpty)  cleanLines.reduce(_ + _) else ""
+                val cleanText = if (cleanLines.nonEmpty)
+                    cleanLines.reduce(_ + _).replaceAll("[^a-zA-Z0-9]"," ")
+                  else ""
+
                 println(cleanText)
                 messageTexts.append(cleanText + "\n")
               }
