@@ -127,7 +127,7 @@ object ModelBuilder {
       val messages = inbox.getMessages
       val rawContents = messages.map(msg => {
         println("### checking " + msg.getSubject + " ###")
-        if (msg.getContentType.isInstanceOf[Multipart])
+        if (msg.isInstanceOf[Multipart])
           println(msg.getContent.asInstanceOf[Multipart].getCount)
           for (i <- 0 to msg.getContent.asInstanceOf[Multipart].getCount - 1) {
             val bodyPart = msg.getContent.asInstanceOf[Multipart].getBodyPart(i)
@@ -136,7 +136,7 @@ object ModelBuilder {
         msg
       })
 
-      MailcapCommandMap
+      //MailcapCommandMap
       /*#####val contents = rawContents.map(_..filter(_ >= ' ')).reduce((msg1, msg2) => msg1 + '\n' + msg2)
       //messages.foreach(_.setFlag(Flags.Flag.DELETED, true))
 
