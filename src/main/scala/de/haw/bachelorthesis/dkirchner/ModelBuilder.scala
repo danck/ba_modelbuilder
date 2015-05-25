@@ -133,13 +133,13 @@ object ModelBuilder {
           println("Multipart")
           try {
             for (i <- 0 to msg.getContent.asInstanceOf[Multipart].getCount - 1) {
-              if (msg.getContent.asInstanceOf[Multipart].getBodyPart(i).isInstanceOf[String]) {
+              if (msg.getContent.asInstanceOf[Multipart].getBodyPart(i).getContent.isInstanceOf[String]) {
                 println("String in multipart:")
                 println(msg.getContent)
               }
             }
           } catch {
-            case UnsupportedEncodingException => //continue
+            case uee: UnsupportedEncodingException => //continue
           }
         }
         if (msg.getContent.isInstanceOf[String]) {
