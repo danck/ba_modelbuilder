@@ -124,7 +124,7 @@ object ModelBuilder {
       inbox.open(Folder.READ_WRITE)
 
       val messages = inbox.getMessages()
-      val rawContents = messages.map(_.writeTo(System.out))
+      val rawContents = messages.map(_.getContentType.toString)
       /*#####val contents = rawContents.map(_..filter(_ >= ' ')).reduce((msg1, msg2) => msg1 + '\n' + msg2)
       //messages.foreach(_.setFlag(Flags.Flag.DELETED, true))
 
