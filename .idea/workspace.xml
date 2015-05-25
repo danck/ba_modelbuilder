@@ -124,11 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModelBuilder.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ModelBuilder.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/ModelBuilder.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63736266">
-              <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -138,18 +138,21 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/HDFSReader.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="20" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HDFSService.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HDFSService.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/HDFSService.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.5648352">
+              <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+              <folding>
+                <element signature="e#41#84#0" expanded="true" />
+                <element signature="e#133#986#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,9 +161,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/MailService.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+              <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
               <folding>
-                <element signature="e#41#84#0" expanded="true" />
+                <element signature="e#896#939#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -199,9 +202,9 @@
         <option value="$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/ModelBuilderActor.scala" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/HDFSReader.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/HDFSService.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/MailService.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/ModelBuilder.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/HDFSService.scala" />
       </list>
     </option>
   </component>
@@ -947,15 +950,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/HDFSReader.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="20" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/HDFSService.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/ModelBuilder.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -963,18 +966,21 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/MailService.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+          <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
           <folding>
-            <element signature="e#41#84#0" expanded="true" />
+            <element signature="e#896#939#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/ModelBuilder.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/HDFSService.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63736266">
-          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
-          <folding />
+        <state vertical-scroll-proportion="0.5648352">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+          <folding>
+            <element signature="e#41#84#0" expanded="true" />
+            <element signature="e#133#986#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

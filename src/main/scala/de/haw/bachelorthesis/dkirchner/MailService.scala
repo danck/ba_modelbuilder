@@ -1,5 +1,26 @@
 package de.haw.bachelorthesis.dkirchner
 
+/*
+ * This file is part of my bachelor thesis.
+ *
+ * Copyright 2015 Daniel Kirchner <daniel.kirchner1@haw-hamburg.de>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU Library General Public License as
+ * published by the Free Software Foundation; either version 2 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public
+ * License along with this program; if not, write to the
+ * Free Software Foundation, Inc.,
+ * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ */
+
 import java.io.UnsupportedEncodingException
 import javax.mail._
 
@@ -10,6 +31,7 @@ object MailService {
   def fetchFrom(account: String, password: String): String = {
     val props = System.getProperties
     props.setProperty("mail.store.protocol", "imaps")
+
     val session = Session.getDefaultInstance(props, null)
     val store = session.getStore("imaps")
     val messageTexts: StringBuilder = new StringBuilder
@@ -23,24 +45,28 @@ object MailService {
       var rawText = new String
       var counter = 0
 
+      // iterate over every retrieved message to extract and concatenate message bodies
       messages.foreach(msg => {
         rawText = ""
         try {
+
+          // iterate over parts of multipart messages and extract text
           if (msg.getContent.isInstanceOf[Multipart]) {
             val multiPartMessage = msg.getContent.asInstanceOf[Multipart]
             for (i <- 0 to multiPartMessage.getCount - 1) {
               if (multiPartMessage.getBodyPart(i).getContent.isInstanceOf[String]) {
-                val rawText = multiPartMessage.getBodyPart(i).getContent.asInstanceOf[String]
+                rawText = multiPartMessage.getBodyPart(i).getContent.asInstanceOf[String]
               }
             }
           }
 
-
+          // directly extract text from plain text messages
           if (msg.getContent.isInstanceOf[String]) {
             rawText = msg.getContent.asInstanceOf[String]
           }
 
-
+          // append extracted text to a newline separated message string
+          // this also performs basic filtering an normalization of the text
           if (rawText != "") {
             val bodyString = rawText
             val bodyLines = bodyString.split('\n')
