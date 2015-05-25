@@ -36,7 +36,7 @@ object ModelBuilder {
     val sparkConf = new SparkConf().setAppName("Model Builder")
     val sc = new SparkContext(sparkConf)
 
-    checkMail()
+    checkMail(sc)
     System.exit(0)
 
     val documents: RDD[Seq[String]] = sc.textFile(textFile)
@@ -109,7 +109,7 @@ object ModelBuilder {
     result
   }
 
-  def checkMail(): Unit = {
+  def checkMail(sc: SparkContext): Unit = {
     val props = System.getProperties()
     props.setProperty("mail.store.protocol", "imaps")
     val session = Session.getDefaultInstance(props, null)
@@ -119,17 +119,13 @@ object ModelBuilder {
       val inbox = store.getFolder("Inbox")
       inbox.open(Folder.READ_WRITE)
 
-      // limit this to 20 message during testing
       val messages = inbox.getMessages()
-      val limit = 20
-      var count = 0
-      for (message <- messages) {
-        count = count + 1
-        if (count > limit) System.exit(0)
-        println(message.getContent.toString.filter(_ >= ' '))
-        message.setFlag(Flags.Flag.DELETED, true)
-      }
+      val contents = messages.map(_.toString.filter(_ >= ' '))
       inbox.close(true)
+
+      val contentsRDD = sc.parallelize(contents)
+      contentsRDD.saveAsTextFile("hdfs://192.168.206.131:54310/dev_emails_auto01.txt")
+
     } catch {
       case e: NoSuchProviderException =>  e.printStackTrace()
         System.exit(1)
