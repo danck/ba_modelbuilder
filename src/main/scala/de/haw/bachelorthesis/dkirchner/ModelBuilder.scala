@@ -128,11 +128,17 @@ object ModelBuilder {
       val rawContents = messages.map(msg => {
         println("### checking " + msg.getSubject + " ###")
         if (msg.getContent.isInstanceOf[Multipart])
-          println(msg.getContent.asInstanceOf[Multipart].getCount)
+          println("Multipart")
           for (i <- 0 to msg.getContent.asInstanceOf[Multipart].getCount - 1) {
-            val bodyPart = msg.getContent.asInstanceOf[Multipart].getBodyPart(i)
-            println(bodyPart.getContentType.toString)
+            if (msg.getContent.isInstanceOf[String]) {
+              println("String in multipart:")
+              println(msg.getContent)
+            }
           }
+        if (msg.getContent.isInstanceOf[String]) {
+          println("String in plain:")
+          println(msg.getContent)
+        }
         msg
       })
 
