@@ -125,7 +125,7 @@ object ModelBuilder {
       inbox.open(Folder.READ_WRITE)
 
       val messages = inbox.getMessages
-      val rawContents = messages.map(msg => {
+      messages.foreach(msg => {
         try {
           println("\n### checking " + msg.getSubject + " ###")
           println("Type: " + msg.getContentType)
@@ -135,18 +135,18 @@ object ModelBuilder {
             for (i <- 0 to msg.getContent.asInstanceOf[Multipart].getCount - 1) {
               if (msg.getContent.asInstanceOf[Multipart].getBodyPart(i).getContent.isInstanceOf[String]) {
                 println("String in multipart:")
-                println(msg.getContent)
+                println(msg.getContent.asInstanceOf[Multipart].getBodyPart(i).getContent)
               }
             }
           }
         } catch {
-          case uee: UnsupportedEncodingException => println("################## CAUGHT ################")//continue
+          case uee: UnsupportedEncodingException =>  println("############ CAUGHT #############")//continue
         }
         if (msg.getContent.isInstanceOf[String]) {
           println("String in plain:")
           println(msg.getContent)
         }
-        msg
+        //msg
       })
 
       //MailcapCommandMap
