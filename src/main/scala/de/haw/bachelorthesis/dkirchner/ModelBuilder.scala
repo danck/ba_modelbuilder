@@ -127,6 +127,8 @@ object ModelBuilder {
       val messages = inbox.getMessages
       val rawContents = messages.map(msg => {
         println("### checking " + msg.getSubject + " ###")
+        println("Type: " + msg.getContentType)
+        println("Class: " + msg.getContent.getClass)
         if (msg.getContent.isInstanceOf[Multipart])
           println("Multipart")
           for (i <- 0 to msg.getContent.asInstanceOf[Multipart].getCount - 1) {
