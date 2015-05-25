@@ -127,8 +127,8 @@
       <file leaf-file-name="ModelBuilder.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/ModelBuilder.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8241309">
-              <caret line="146" column="10" selection-start-line="146" selection-start-column="10" selection-end-line="146" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.48670757">
+              <caret line="136" column="33" selection-start-line="136" selection-start-column="33" selection-end-line="136" selection-end-column="33" />
               <folding>
                 <element signature="e#89#105#0" expanded="true" />
               </folding>
@@ -900,8 +900,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/ModelBuilder.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8241309">
-          <caret line="146" column="10" selection-start-line="146" selection-start-column="10" selection-end-line="146" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.48670757">
+          <caret line="136" column="33" selection-start-line="136" selection-start-column="33" selection-end-line="136" selection-end-column="33" />
           <folding>
             <element signature="e#89#105#0" expanded="true" />
           </folding>

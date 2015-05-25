@@ -139,14 +139,14 @@ object ModelBuilder {
               }
             }
           }
-        } catch {
-          case uee: UnsupportedEncodingException =>  println("############ CAUGHT #############")//continue
-        }
         if (msg.getContent.isInstanceOf[String]) {
           println("String in plain:")
           println(msg.getContent)
         }
-        //msg
+          // STUFF GOES HERE
+        } catch {
+          case uee: UnsupportedEncodingException =>  println("############ CAUGHT #############")//continue
+        }
       })
 
       //MailcapCommandMap
