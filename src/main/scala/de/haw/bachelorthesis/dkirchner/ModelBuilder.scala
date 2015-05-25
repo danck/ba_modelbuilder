@@ -126,7 +126,7 @@ object ModelBuilder {
       for (message <- messages) {
         count = count + 1
         if (count > limit) System.exit(0)
-        println(message.getContent.toString.filter(_ != "\n"))
+        println(message.getContent.toString.filter(character => character != '\n'))
         message.setFlag(Flags.Flag.DELETED, true)
       }
       inbox.close(true)
