@@ -137,7 +137,7 @@ object ModelBuilder {
                 val bodyLines = bodyString.split('\n')
                   .filter(line => !line.trim.startsWith(">")) // remove quoted lines
                   .filter(line => !line.trim.startsWith("<")) // remove html tags
-                val cleanLines = bodyLines.map(line => line.filter(_ > ' ')) // remove control characters
+                val cleanLines = bodyLines.map(line => line.stripLineEnd) // remove control characters
                 val cleanText = if (cleanLines.nonEmpty)  cleanLines.reduce(_ + _) else ""
                 println(cleanText)
                 messageTexts.append(cleanText + "\n")
@@ -146,7 +146,7 @@ object ModelBuilder {
           }
         if (msg.getContent.isInstanceOf[String]) {
           println("String in plain:")
-          println(msg.getContent)
+          //println(msg.getContent)
         }
         // STUFF GOES HERE
         } catch {
