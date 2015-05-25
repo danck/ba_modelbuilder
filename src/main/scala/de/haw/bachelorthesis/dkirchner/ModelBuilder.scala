@@ -138,7 +138,7 @@ object ModelBuilder {
                   .filter(line => !line.trim.startsWith(">")) // remove quoted lines
                   .filter(line => !line.trim.startsWith("<")) // remove html tags
                 val cleanText = bodyLines.map(line => line.filter(_ > ' ')) // remove control characters
-                  .reduceLeft(_ + _)
+                  .reduce(_ + _)
                 println(cleanText)
                 messageTexts.append(cleanText + "\n")
               }
