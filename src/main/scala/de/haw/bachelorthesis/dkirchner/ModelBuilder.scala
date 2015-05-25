@@ -30,18 +30,19 @@ object ModelBuilder {
   val docWindowSize: Integer = 1500
 
   def main (args: Array[String]) {
-    if (args.length < 1) {
-      System.err.println("Usage: ModelBuilder <textfile>")
+    if (args.length < 3) {
+      System.err.println("Usage: ModelBuilder <textfile> <mail account> <mail password>")
       System.exit(1)
     }
 
-    val Array(textFile) = args.take(1)
+    val Array(textFile, account, password) = args.take(3)
     val sparkConf = new SparkConf()
       .setAppName("Model Builder")
       .set("spark.hadoop.validateOutputSpecs", "false") // to overwrite output files
     val sc = new SparkContext(sparkConf)
 
-    checkMail(sc, textFile)
+    val newMessages = MailService.fetchFrom(account, password)
+    println(newMessages)
     System.exit(0)
 
     val documents: RDD[Seq[String]] = sc.textFile(textFile)
@@ -114,24 +115,27 @@ object ModelBuilder {
     result
   }
 
-  def checkMail(sc: SparkContext, file: String): Unit = {
-    val props = System.getProperties()
+  def fetchMail(account: String, password: String): Unit = {
+    val props = System.getProperties
     props.setProperty("mail.store.protocol", "imaps")
     val session = Session.getDefaultInstance(props, null)
     val store = session.getStore("imaps")
+    val messageTexts: StringBuilder = new StringBuilder
+
     try {
-      store.connect("imap.gmail.com", "danomonitoring@googlemail.com", "monitoring4Me!")
+      store.connect("imap.gmail.com", account, password)
       val inbox = store.getFolder("Inbox")
       inbox.open(Folder.READ_WRITE)
 
       val messages = inbox.getMessages
-      val messageTexts: StringBuilder = new StringBuilder
       var rawText = new String
       var counter = 0
 
       messages.foreach(msg => {
         rawText = ""
         try {
+
+
           if (msg.getContent.isInstanceOf[Multipart]) {
             val multiPartMessage = msg.getContent.asInstanceOf[Multipart]
             for (i <- 0 to multiPartMessage.getCount - 1) {
@@ -140,16 +144,20 @@ object ModelBuilder {
               }
             }
           }
+
+
           if (msg.getContent.isInstanceOf[String]) {
             rawText = msg.getContent.asInstanceOf[String]
           }
+
+
           if (rawText != "") {
             val bodyString = rawText
             val bodyLines = bodyString.split('\n')
               .filter(line => !line.trim.startsWith(">")) // remove quoted lines
               .filter(line => !line.trim.startsWith("<")) // remove html tags
               .filter(line => !line.trim.startsWith("On"))
-            val cleanLines = bodyLines.map(line => line.stripLineEnd) // remove control characters
+            val cleanLines = bodyLines.map(line => line.stripLineEnd) // remove newlines
             val cleanText = if (cleanLines.nonEmpty)
                 cleanLines.reduce(_ + _).replaceAll("[^a-zA-Z0-9]", " ") // remove special characters
               else ""
@@ -163,36 +171,15 @@ object ModelBuilder {
         }
       })
 
-      /*#####val contents = rawContents.map(_..filter(_ >= ' ')).reduce((msg1, msg2) => msg1 + '\n' + msg2)
-      //messages.foreach(_.setFlag(Flags.Flag.DELETED, true))
-
-      println(contents.take(400))
-
-      val conf = new Configuration()
-      val hdfsCoreSitePath = new Path("/opt/hadoop/conf/core-site.xml")
-      val hdfsHDFSSitePath = new Path("/opt/hadoop/conf/hdfs-site.xml")
-
-      conf.addResource(hdfsCoreSitePath)
-      conf.addResource(hdfsHDFSSitePath)
-
-      val fileSystem = FileSystem.get(conf)
-
-      val hdfsOutputStream = fileSystem.create(new Path("hdfs://192.168.206.131:54310/dev_emails_auto02.txt"))
-
-      hdfsOutputStream.writeChars(contents)
-
-      fileSystem.close() #####*/
-      //val contentsRDD = sc.parallelize(contents)
-      //contentsRDD.saveAsTextFile("hdfs://192.168.206.131:54310/dev_emails_auto01.txt")
-
       inbox.close(true)
     } catch {
-      case e: NoSuchProviderException =>  e.printStackTrace()
+      case e: NoSuchProviderException => e.printStackTrace()
         System.exit(1)
-      case me: MessagingException =>      me.printStackTrace()
+      case me: MessagingException     => me.printStackTrace()
         System.exit(2)
     } finally {
       store.close()
     }
+    messageTexts.toString()
   }
 }
