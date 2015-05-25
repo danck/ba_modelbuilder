@@ -13,6 +13,8 @@ import javax.mail.internet._
 import javax.mail.search._
 import java.util.Properties
 
+import org.apache.hadoop.conf.Configuration
+import org.apache.hadoop.fs.{FileSystem, Path}
 import org.apache.spark.SparkConf
 import org.apache.spark.rdd.RDD
 import org.apache.spark.SparkContext
@@ -38,7 +40,7 @@ object ModelBuilder {
       .set("spark.hadoop.validateOutputSpecs", "false") // to overwrite output files
     val sc = new SparkContext(sparkConf)
 
-    checkMail(sc)
+    checkMail(sc, textFile)
     System.exit(0)
 
     val documents: RDD[Seq[String]] = sc.textFile(textFile)
@@ -111,7 +113,7 @@ object ModelBuilder {
     result
   }
 
-  def checkMail(sc: SparkContext): Unit = {
+  def checkMail(sc: SparkContext, file: String): Unit = {
     val props = System.getProperties()
     props.setProperty("mail.store.protocol", "imaps")
     val session = Session.getDefaultInstance(props, null)
@@ -127,8 +129,22 @@ object ModelBuilder {
 
       println(contents.take(400))
 
-      val contentsRDD = sc.parallelize(contents)
-      contentsRDD.saveAsTextFile("hdfs://192.168.206.131:54310/dev_emails_auto01.txt")
+      val conf = new Configuration()
+      val hdfsCoreSitePath = new Path("/opt/hadoop/conf/core-site.xml")
+      val hdfsHDFSSitePath = new Path("/opt/hadoop/conf/hdfs-site.xml")
+
+      conf.addResource(hdfsCoreSitePath)
+      conf.addResource(hdfsHDFSSitePath)
+
+      val fileSystem = FileSystem.get(conf)
+
+      val hdfsOutputStream = fileSystem.append(new Path("hdfs://192.168.206.131:54310/dev_emails_auto02.txt"))
+
+      hdfsOutputStream.writeChars(contents)
+
+      fileSystem.close()
+      //val contentsRDD = sc.parallelize(contents)
+      //contentsRDD.saveAsTextFile("hdfs://192.168.206.131:54310/dev_emails_auto01.txt")
 
       inbox.close(true)
     } catch {
