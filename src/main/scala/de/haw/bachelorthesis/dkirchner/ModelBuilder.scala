@@ -126,21 +126,21 @@ object ModelBuilder {
 
       val messages = inbox.getMessages
       val rawContents = messages.map(msg => {
-        println("### checking " + msg.getSubject + " ###")
-        println("Type: " + msg.getContentType)
-        println("Class: " + msg.getContent.getClass)
-        if (msg.getContent.isInstanceOf[Multipart]) {
-          println("Multipart")
-          try {
+        try {
+          println("\n### checking " + msg.getSubject + " ###")
+          println("Type: " + msg.getContentType)
+          println("Class: " + msg.getContent.getClass)
+          if (msg.getContent.isInstanceOf[Multipart]) {
+            println("Multipart")
             for (i <- 0 to msg.getContent.asInstanceOf[Multipart].getCount - 1) {
               if (msg.getContent.asInstanceOf[Multipart].getBodyPart(i).getContent.isInstanceOf[String]) {
                 println("String in multipart:")
                 println(msg.getContent)
               }
             }
-          } catch {
-            case uee: UnsupportedEncodingException => //continue
           }
+        } catch {
+          case uee: UnsupportedEncodingException => println("################## CAUGHT ################")//continue
         }
         if (msg.getContent.isInstanceOf[String]) {
           println("String in plain:")
