@@ -154,7 +154,8 @@ object ModelBuilder {
                 cleanLines.reduce(_ + _).replaceAll("[^a-zA-Z0-9]", " ") // remove special characters
               else ""
 
-            println( counter += 1)
+            counter += 1
+            println( counter.toString )
             messageTexts.append(cleanText + "\n")
           }
         } catch {
