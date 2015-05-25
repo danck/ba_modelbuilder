@@ -33,7 +33,9 @@ object ModelBuilder {
     }
 
     val Array(textFile) = args.take(1)
-    val sparkConf = new SparkConf().setAppName("Model Builder")
+    val sparkConf = new SparkConf()
+      .setAppName("Model Builder")
+      .set("spark.hadoop.validateOutputSpecs", "false") // to overwrite output files
     val sc = new SparkContext(sparkConf)
 
     checkMail(sc)
@@ -96,7 +98,7 @@ object ModelBuilder {
    */
   def mergeSparseVectors(sv1: SparseVector, sv2: SparseVector): Vector = {
     if (sv1.size != sv2.size)
-      throw  new IllegalArgumentException("Input vectors must be of equal size")
+      throw new IllegalArgumentException("Input vectors must be of equal size")
 
     val indices1 = sv1.getIndices
     val indices2 = sv2.getIndices
@@ -120,7 +122,7 @@ object ModelBuilder {
       inbox.open(Folder.READ_WRITE)
 
       val messages = inbox.getMessages()
-      val contents = messages.map(_.toString.filter(_ >= ' '))
+      val contents = messages.map(_.toString.filter(_ >= ' ')).reduceLeft((msg1, msg2) => msg1 + '\n' + msg2)
       inbox.close(true)
 
       val contentsRDD = sc.parallelize(contents)
