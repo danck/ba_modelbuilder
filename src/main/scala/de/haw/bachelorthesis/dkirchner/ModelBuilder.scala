@@ -36,6 +36,9 @@ object ModelBuilder {
     val sparkConf = new SparkConf().setAppName("Model Builder")
     val sc = new SparkContext(sparkConf)
 
+    checkMail()
+    System.exit(0)
+
     val documents: RDD[Seq[String]] = sc.textFile(textFile)
       .filter(_.length > 15)
       .map(_.toLowerCase)
@@ -66,8 +69,6 @@ object ModelBuilder {
     } finally {
       oos.close()
     }
-
-    checkMail()
 
     println("FINISHED " + Calendar.getInstance().getTime)
   }
@@ -125,7 +126,7 @@ object ModelBuilder {
       for (message <- messages) {
         count = count + 1
         if (count > limit) System.exit(0)
-        println(message.getSubject())
+        println(message.getContent.toString.filter(_ != "\n"))
         message.setFlag(Flags.Flag.DELETED, true)
       }
       inbox.close(true)
