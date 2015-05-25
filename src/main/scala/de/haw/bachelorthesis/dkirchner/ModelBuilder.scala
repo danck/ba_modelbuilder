@@ -129,7 +129,7 @@ object ModelBuilder {
         println("### checking " + msg.getSubject + " ###")
         println("Type: " + msg.getContentType)
         println("Class: " + msg.getContent.getClass)
-        if (msg.getContent.isInstanceOf[Multipart])
+        if (msg.getContent.isInstanceOf[Multipart]) {
           println("Multipart")
           for (i <- 0 to msg.getContent.asInstanceOf[Multipart].getCount - 1) {
             if (msg.getContent.isInstanceOf[String]) {
@@ -137,6 +137,7 @@ object ModelBuilder {
               println(msg.getContent)
             }
           }
+        }
         if (msg.getContent.isInstanceOf[String]) {
           println("String in plain:")
           println(msg.getContent)
