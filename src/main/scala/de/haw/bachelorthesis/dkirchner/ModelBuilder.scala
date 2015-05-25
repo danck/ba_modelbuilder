@@ -138,7 +138,7 @@ object ModelBuilder {
 
       val fileSystem = FileSystem.get(conf)
 
-      val hdfsOutputStream = fileSystem.append(new Path("hdfs://192.168.206.131:54310/dev_emails_auto02.txt"))
+      val hdfsOutputStream = fileSystem.create(new Path("hdfs://192.168.206.131:54310/dev_emails_auto02.txt"))
 
       hdfsOutputStream.writeChars(contents)
 
