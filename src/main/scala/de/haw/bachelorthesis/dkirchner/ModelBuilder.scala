@@ -125,16 +125,22 @@ object ModelBuilder {
       inbox.open(Folder.READ_WRITE)
 
       val messages = inbox.getMessages
+      var messageTexts: StringBuilder = new StringBuilder
+
       messages.foreach(msg => {
-        var messageTexts: StringBuilder = new StringBuilder
         try {
           if (msg.getContent.isInstanceOf[Multipart]) {
             val multiPartMessage = msg.getContent.asInstanceOf[Multipart]
             for (i <- 0 to multiPartMessage.getCount - 1) {
               if (multiPartMessage.getBodyPart(i).getContent.isInstanceOf[String]) {
                 val bodyString = multiPartMessage.getBodyPart(i).getContent.asInstanceOf[String]
-                val bodyLines = bodyString.split('\n').filter(line => !line.startsWith(">"))
-                bodyLines.foreach(line => println("\nLINE:\b" + line))
+                val bodyLines = bodyString.split('\n')
+                  .filter(line => !line.trim.startsWith(">")) // remove quoted lines
+                  .filter(line => !line.trim.startsWith("<")) // remove html tags
+                val cleanText = bodyLines.map(line => line.filter(_ > ' ')) // remove control characters
+                  .reduceLeft(_ + _)
+                println(cleanText)
+                messageTexts.append(cleanText + "\n")
               }
             }
           }
