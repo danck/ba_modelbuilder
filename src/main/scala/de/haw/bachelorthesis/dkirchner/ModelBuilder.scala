@@ -124,13 +124,13 @@ object ModelBuilder {
       val messages = inbox.getMessages()
       val contents = messages.map(_.toString.filter(_ >= ' ')).reduce((msg1, msg2) => msg1 + '\n' + msg2)
       //messages.foreach(_.setFlag(Flags.Flag.DELETED, true))
-      inbox.close(true)
 
-      println(contents)
+      println(contents.take(400))
 
       val contentsRDD = sc.parallelize(contents)
       contentsRDD.saveAsTextFile("hdfs://192.168.206.131:54310/dev_emails_auto01.txt")
 
+      inbox.close(true)
     } catch {
       case e: NoSuchProviderException =>  e.printStackTrace()
         System.exit(1)
