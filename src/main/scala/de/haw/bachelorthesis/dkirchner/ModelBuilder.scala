@@ -127,6 +127,7 @@ object ModelBuilder {
       val messages = inbox.getMessages
       val messageTexts: StringBuilder = new StringBuilder
       var rawText = new String
+      var counter = 0
 
       messages.foreach(msg => {
         rawText = ""
@@ -153,7 +154,7 @@ object ModelBuilder {
                 cleanLines.reduce(_ + _).replaceAll("[^a-zA-Z0-9]", " ") // remove special characters
               else ""
 
-            println(cleanText)
+            println( counter += 1)
             messageTexts.append(cleanText + "\n")
           }
         } catch {
