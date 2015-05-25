@@ -124,7 +124,8 @@ object ModelBuilder {
       inbox.open(Folder.READ_WRITE)
 
       val messages = inbox.getMessages()
-      val contents = messages.map(_.toString.filter(_ >= ' ')).reduce((msg1, msg2) => msg1 + '\n' + msg2)
+      val rawContents = messages.map(_.writeTo(System.out))
+      /*#####val contents = rawContents.map(_..filter(_ >= ' ')).reduce((msg1, msg2) => msg1 + '\n' + msg2)
       //messages.foreach(_.setFlag(Flags.Flag.DELETED, true))
 
       println(contents.take(400))
@@ -142,7 +143,7 @@ object ModelBuilder {
 
       hdfsOutputStream.writeChars(contents)
 
-      fileSystem.close()
+      fileSystem.close() #####*/
       //val contentsRDD = sc.parallelize(contents)
       //contentsRDD.saveAsTextFile("hdfs://192.168.206.131:54310/dev_emails_auto01.txt")
 
