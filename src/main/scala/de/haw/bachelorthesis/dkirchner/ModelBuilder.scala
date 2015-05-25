@@ -126,16 +126,15 @@ object ModelBuilder {
 
       val messages = inbox.getMessages
       messages.foreach(msg => {
+        var messageTexts: StringBuilder = new StringBuilder
         try {
-          println("\n### checking " + msg.getSubject + " ###")
-          println("Type: " + msg.getContentType)
-          println("Class: " + msg.getContent.getClass)
           if (msg.getContent.isInstanceOf[Multipart]) {
-            println("Multipart")
-            for (i <- 0 to msg.getContent.asInstanceOf[Multipart].getCount - 1) {
-              if (msg.getContent.asInstanceOf[Multipart].getBodyPart(i).getContent.isInstanceOf[String]) {
-                println("String in multipart:")
-                println(msg.getContent.asInstanceOf[Multipart].getBodyPart(i).getContent)
+            val multiPartMessage = msg.getContent.asInstanceOf[Multipart]
+            for (i <- 0 to multiPartMessage.getCount - 1) {
+              if (multiPartMessage.getBodyPart(i).getContent.isInstanceOf[String]) {
+                val bodyString = multiPartMessage.getBodyPart(i).getContent.asInstanceOf[String]
+                val bodyLines = bodyString.split('\n').filter(line => !line.startsWith(">"))
+                bodyLines.foreach(line => println("\nLINE:\b" + line))
               }
             }
           }
@@ -143,13 +142,12 @@ object ModelBuilder {
           println("String in plain:")
           println(msg.getContent)
         }
-          // STUFF GOES HERE
+        // STUFF GOES HERE
         } catch {
-          case uee: UnsupportedEncodingException =>  println("############ CAUGHT #############")//continue
+          case uee: UnsupportedEncodingException =>  //continue
         }
       })
 
-      //MailcapCommandMap
       /*#####val contents = rawContents.map(_..filter(_ >= ' ')).reduce((msg1, msg2) => msg1 + '\n' + msg2)
       //messages.foreach(_.setFlag(Flags.Flag.DELETED, true))
 
