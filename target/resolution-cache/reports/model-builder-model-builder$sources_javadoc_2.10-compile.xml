@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150524195629"/>
+		date="20150525185313"/>
 	<dependencies>
 		<module organisation="javax.mail" name="mail">
 			<revision name="1.4.7" status="release" pubdate="20130309023818" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="133">
@@ -17,10 +17,10 @@
 					<artifact name="mail" type="jar" ext="jar" status="no" details="" size="521157" time="0" location="C:\Users\Daniel\.ivy2\cache\javax.mail\mail\jars\mail-1.4.7.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/mail/mail/1.4.7/mail-1.4.7.jar"/>
 					</artifact>
-					<artifact name="mail" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="710912" time="1156" location="C:\Users\Daniel\.ivy2\cache\javax.mail\mail\srcs\mail-1.4.7-sources.jar">
+					<artifact name="mail" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="710912" time="0" location="C:\Users\Daniel\.ivy2\cache\javax.mail\mail\srcs\mail-1.4.7-sources.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/mail/mail/1.4.7/mail-1.4.7-sources.jar"/>
 					</artifact>
-					<artifact name="mail" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1486172" time="1818" location="C:\Users\Daniel\.ivy2\cache\javax.mail\mail\docs\mail-1.4.7-javadoc.jar">
+					<artifact name="mail" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1486172" time="0" location="C:\Users\Daniel\.ivy2\cache\javax.mail\mail\docs\mail-1.4.7-javadoc.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/mail/mail/1.4.7/mail-1.4.7-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -34,10 +34,10 @@
 					<artifact name="javax.mail-api" type="jar" ext="jar" status="no" details="" size="189526" time="0" location="C:\Users\Daniel\.ivy2\cache\javax.mail\javax.mail-api\jars\javax.mail-api-1.4.7.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/mail/javax.mail-api/1.4.7/javax.mail-api-1.4.7.jar"/>
 					</artifact>
-					<artifact name="javax.mail-api" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="719802" time="1625" location="C:\Users\Daniel\.ivy2\cache\javax.mail\javax.mail-api\docs\javax.mail-api-1.4.7-javadoc.jar">
+					<artifact name="javax.mail-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="719802" time="0" location="C:\Users\Daniel\.ivy2\cache\javax.mail\javax.mail-api\docs\javax.mail-api-1.4.7-javadoc.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/mail/javax.mail-api/1.4.7/javax.mail-api-1.4.7-javadoc.jar"/>
 					</artifact>
-					<artifact name="javax.mail-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="322556" time="1028" location="C:\Users\Daniel\.ivy2\cache\javax.mail\javax.mail-api\srcs\javax.mail-api-1.4.7-sources.jar">
+					<artifact name="javax.mail-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="322556" time="0" location="C:\Users\Daniel\.ivy2\cache\javax.mail\javax.mail-api\srcs\javax.mail-api-1.4.7-sources.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/mail/javax.mail-api/1.4.7/javax.mail-api-1.4.7-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1457,7 +1457,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-shuffle">
 			<revision name="2.2.0" status="release" pubdate="20131007083703" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="50">
-				<metadata-artifact status="successful" details="" size="1675" time="393" location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-mapreduce-client-shuffle\ivy-2.2.0.xml" searched="true" original-local-location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-mapreduce-client-shuffle\ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="1675" time="443" location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-mapreduce-client-shuffle\ivy-2.2.0.xml" searched="true" original-local-location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-mapreduce-client-shuffle\ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom"/>
 				<caller organisation="model-builder" name="model-builder$sources_javadoc_2.10" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hadoop-mapreduce-client-shuffle" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="108204" time="0" location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-mapreduce-client-shuffle\docs\hadoop-mapreduce-client-shuffle-2.2.0-javadoc.jar">
@@ -1474,7 +1474,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-yarn-server-nodemanager">
 			<revision name="2.2.0" status="release" pubdate="20131007083538" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="105">
-				<metadata-artifact status="successful" details="" size="7324" time="468" location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-yarn-server-nodemanager\ivy-2.2.0.xml" searched="true" original-local-location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-yarn-server-nodemanager\ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="7324" time="433" location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-yarn-server-nodemanager\ivy-2.2.0.xml" searched="true" original-local-location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-yarn-server-nodemanager\ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom"/>
 				<caller organisation="model-builder" name="model-builder$sources_javadoc_2.10" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hadoop-yarn-server-nodemanager" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="262442" time="0" location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-yarn-server-nodemanager\srcs\hadoop-yarn-server-nodemanager-2.2.0-sources.jar">
@@ -1491,7 +1491,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-common">
 			<revision name="2.2.0" status="release" pubdate="20131007083659" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="30">
-				<metadata-artifact status="successful" details="" size="3273" time="981" location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-mapreduce-client-common\ivy-2.2.0.xml" searched="true" original-local-location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-mapreduce-client-common\ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="3273" time="394" location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-mapreduce-client-common\ivy-2.2.0.xml" searched="true" original-local-location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-mapreduce-client-common\ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom"/>
 				<caller organisation="model-builder" name="model-builder$sources_javadoc_2.10" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hadoop-mapreduce-client-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="244749" time="0" location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-mapreduce-client-common\srcs\hadoop-mapreduce-client-common-2.2.0-sources.jar">
@@ -1559,7 +1559,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-yarn-common">
 			<revision name="2.2.0" status="release" pubdate="20131007083515" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="31">
-				<metadata-artifact status="successful" details="" size="5032" time="959" location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-yarn-common\ivy-2.2.0.xml" searched="true" original-local-location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-yarn-common\ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="5032" time="407" location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-yarn-common\ivy-2.2.0.xml" searched="true" original-local-location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-yarn-common\ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom"/>
 				<caller organisation="model-builder" name="model-builder$sources_javadoc_2.10" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hadoop-yarn-common" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="6749818" time="0" location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-yarn-common\docs\hadoop-yarn-common-2.2.0-javadoc.jar">
@@ -1576,7 +1576,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-yarn-api">
 			<revision name="2.2.0" status="release" pubdate="20131007083452" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="32">
-				<metadata-artifact status="successful" details="" size="2956" time="389" location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-yarn-api\ivy-2.2.0.xml" searched="true" original-local-location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-yarn-api\ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="2956" time="378" location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-yarn-api\ivy-2.2.0.xml" searched="true" original-local-location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-yarn-api\ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom"/>
 				<caller organisation="model-builder" name="model-builder$sources_javadoc_2.10" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hadoop-yarn-api" type="jar" ext="jar" status="no" details="" size="1158936" time="0" location="C:\Users\Daniel\.ivy2\cache\org.apache.hadoop\hadoop-yarn-api\jars\hadoop-yarn-api-2.2.0.jar">

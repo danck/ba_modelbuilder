@@ -125,34 +125,37 @@ object ModelBuilder {
       inbox.open(Folder.READ_WRITE)
 
       val messages = inbox.getMessages
-      var messageTexts: StringBuilder = new StringBuilder
+      val messageTexts: StringBuilder = new StringBuilder
+      var rawText = new String
 
       messages.foreach(msg => {
+        rawText = ""
         try {
           if (msg.getContent.isInstanceOf[Multipart]) {
             val multiPartMessage = msg.getContent.asInstanceOf[Multipart]
             for (i <- 0 to multiPartMessage.getCount - 1) {
               if (multiPartMessage.getBodyPart(i).getContent.isInstanceOf[String]) {
-                val bodyString = multiPartMessage.getBodyPart(i).getContent.asInstanceOf[String]
-                val bodyLines = bodyString.split('\n')
-                  .filter(line => !line.trim.startsWith(">")) // remove quoted lines
-                  .filter(line => !line.trim.startsWith("<")) // remove html tags
-                  .filter(line => !line.trim.startsWith("On"))
-                val cleanLines = bodyLines.map(line => line.stripLineEnd) // remove control characters
-                val cleanText = if (cleanLines.nonEmpty)
-                    cleanLines.reduce(_ + _).replaceAll("[^a-zA-Z0-9]"," ")
-                  else ""
-
-                println(cleanText)
-                messageTexts.append(cleanText + "\n")
+                val rawText = multiPartMessage.getBodyPart(i).getContent.asInstanceOf[String]
               }
             }
           }
-        if (msg.getContent.isInstanceOf[String]) {
-          println("String in plain:")
-          //println(msg.getContent)
-        }
-        // STUFF GOES HERE
+          if (msg.getContent.isInstanceOf[String]) {
+            rawText = msg.getContent.asInstanceOf[String]
+          }
+          if (rawText != "") {
+            val bodyString = rawText
+            val bodyLines = bodyString.split('\n')
+              .filter(line => !line.trim.startsWith(">")) // remove quoted lines
+              .filter(line => !line.trim.startsWith("<")) // remove html tags
+              .filter(line => !line.trim.startsWith("On"))
+            val cleanLines = bodyLines.map(line => line.stripLineEnd) // remove control characters
+            val cleanText = if (cleanLines.nonEmpty)
+                cleanLines.reduce(_ + _).replaceAll("[^a-zA-Z0-9]", " ") // remove special characters
+              else ""
+
+            println(cleanText)
+            messageTexts.append(cleanText + "\n")
+          }
         } catch {
           case uee: UnsupportedEncodingException =>  //continue
         }
