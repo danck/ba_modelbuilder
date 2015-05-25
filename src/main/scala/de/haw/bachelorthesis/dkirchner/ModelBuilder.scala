@@ -123,8 +123,16 @@ object ModelBuilder {
       val inbox = store.getFolder("Inbox")
       inbox.open(Folder.READ_WRITE)
 
-      val messages = inbox.getMessages()
-      val rawContents = messages.map(_.getContentType.toString).foreach(elem => println(elem))
+      val messages = inbox.getMessages
+      val rawContents = messages.map(msg => {
+        if (msg.getContentType.isInstanceOf[Multipart])
+          println(msg.asInstanceOf[Multipart].getCount)
+          for (i <- 0 to msg.asInstanceOf[Multipart].getCount - 1) {
+            val bodyPart = msg.asInstanceOf[Multipart].getBodyPart(i)
+            println(bodyPart.getContentType.toString)
+          }
+        msg
+      })
       /*#####val contents = rawContents.map(_..filter(_ >= ' ')).reduce((msg1, msg2) => msg1 + '\n' + msg2)
       //messages.foreach(_.setFlag(Flags.Flag.DELETED, true))
 
