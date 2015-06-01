@@ -32,8 +32,8 @@ import org.apache.hadoop.fs.{BufferedFSInputStream, FileSystem, Path}
  */
 object HDFSService {
   private val hadoopConf = new Configuration()
-  private val hdfsCoreSitePath = new Path("/opt/hadoop/conf/core-site.xml")
-  private val hdfsHDFSSitePath = new Path("/opt/hadoop/conf/hdfs-site.xml")
+  private val hdfsCoreSitePath = new Path("/opt/hadoop/etc/hadoop/core-site.xml")
+  private val hdfsHDFSSitePath = new Path("/opt/hadoop/etc/hadoop/hdfs-site.xml")
 
   hadoopConf.addResource(hdfsCoreSitePath)
   hadoopConf.addResource(hdfsHDFSSitePath)
@@ -56,6 +56,7 @@ object HDFSService {
       }
       val outStream = hdfs.append(path)
       outStream.writeChars(content)
+      outStream.flush()
       outStream.close()
     } catch {
       case e: Exception =>
