@@ -124,11 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModelBuilder.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ModelBuilder.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/ModelBuilder.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21806167">
-              <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="116" column="25" selection-start-line="116" selection-start-column="25" selection-end-line="116" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -164,11 +164,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModelBuilderTests.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ModelBuilderTests.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/de/haw/bachelorthesis/dkirchner/tests/ModelBuilderTests.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.49118942">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -193,13 +193,13 @@
       <list>
         <option value="$PROJECT_DIR$/project/project/assembly.sbt" />
         <option value="$PROJECT_DIR$/project/plugins.sbt" />
-        <option value="$PROJECT_DIR$/src/test/scala/de/haw/bachelorthesis/dkirchner/tests/ModelBuilderTests.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/ModelBuilderActor.scala" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/ModelBuilder.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/HDFSService.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/HDFSReader.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/MailService.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/de/haw/bachelorthesis/dkirchner/tests/ModelBuilderTests.scala" />
       </list>
     </option>
   </component>
@@ -1102,14 +1102,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/de/haw/bachelorthesis/dkirchner/tests/ModelBuilderTests.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/HDFSService.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1136,8 +1128,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/ModelBuilder.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21806167">
-          <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="116" column="25" selection-start-line="116" selection-start-column="25" selection-end-line="116" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/de/haw/bachelorthesis/dkirchner/tests/ModelBuilderTests.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49118942">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
