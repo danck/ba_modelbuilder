@@ -1,7 +1,10 @@
 package de.haw.bachelorthesis.dkirchner
 
+import java.io.{FileInputStream, InputStreamReader, BufferedReader, FileReader}
+import java.util.Calendar
+
 import org.apache.hadoop.conf.Configuration
-import org.apache.hadoop.fs.{FileSystem, Path}
+import org.apache.hadoop.fs.{BufferedFSInputStream, FileSystem, Path}
 
 /*
  * This file is part of my bachelor thesis.
@@ -38,13 +41,14 @@ object HDFSService {
   private val hdfs = FileSystem.get(hadoopConf)
 
   /**
-   * Appends a string to a text file stored in HDFS
-   * If the file doesn't exist it is created first
+   * Workaround to append a string to a text file since
+   * append is not supported in Hadoop 1.x
    * @param pathToFile
    * @param content
    */
   def appendToTextFile(pathToFile: String, content: String): Unit = {
     val path = new Path(pathToFile)
+    val tempPath = new Path(pathToFile + "_" + Calendar.getInstance().getTime.toString)
 
     try {
       if (!hdfs.exists(path)){
