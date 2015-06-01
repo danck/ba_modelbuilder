@@ -57,7 +57,7 @@ object ModelBuilder {
 
     val newMessages = MailService.fetchFrom(account, password)
     println(newMessages)
-    System.exit(0)
+    HDFSService.appendToTextFile(textFile, newMessages)
 
     val documents: RDD[Seq[String]] = sc.textFile(textFile)
       .filter(_.length > 15)

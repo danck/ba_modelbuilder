@@ -35,11 +35,22 @@ object HDFSService {
   hadoopConf.addResource(hdfsCoreSitePath)
   hadoopConf.addResource(hdfsHDFSSitePath)
 
-  private val fileSystem = FileSystem.get(hadoopConf)
+  private val hdfs = FileSystem.get(hadoopConf)
 
+  /**
+   * Appends a string to a text file stored in HDFS
+   * If the file doesn't exist it is created first
+   * @param pathToFile
+   * @param content
+   */
   def appendToTextFile(pathToFile: String, content: String): Unit = {
+    val path = new Path(pathToFile)
+
     try {
-      val outStream = fileSystem.append(new Path(pathToFile))
+      if (!hdfs.exists(path)){
+        hdfs.createNewFile(path)
+      }
+      val outStream = hdfs.append(path)
       outStream.writeChars(content)
       outStream.close()
     } catch {
