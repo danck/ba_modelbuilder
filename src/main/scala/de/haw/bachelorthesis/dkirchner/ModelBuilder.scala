@@ -43,6 +43,9 @@ object ModelBuilder {
   // time between updating the relevance model
   private val refreshInterval: Long = 10000
 
+  // local file system path to save the feature vector at
+  private val modelPath: String = "/tmp/tfidf"
+
   def main (args: Array[String]) {
     if (args.length < 3) {
       System.err.println("Usage: ModelBuilder <textfile> <mail account> <mail password>")
@@ -59,9 +62,8 @@ object ModelBuilder {
     HDFSService.appendToTextFile(textFile, newMessages)
 
     val documents: RDD[Seq[String]] = sc.textFile(textFile)
-      .filter(_.length > 15)
       .map(_.toLowerCase)
-      .map(_.split(" ").toSeq)
+      .map(_.split(" ").filter(_.length > 2).toSeq)
 
     val hashingTF = new HashingTF(1 << 20)
     val tf: RDD[Vector] = hashingTF.transform(documents)
@@ -77,8 +79,8 @@ object ModelBuilder {
         addSparseVectors(vector1.asInstanceOf[SparseVector], vector2.asInstanceOf[SparseVector])
       )
 
-    // (2) write the model instance out to a file
-    val oos = new ObjectOutputStream(new FileOutputStream("/tmp/tfidf"))
+    // write the model instance out to a file
+    val oos = new ObjectOutputStream(new FileOutputStream(modelPath))
     try {
       oos.writeObject(relevanceVector)
     } catch {
@@ -88,8 +90,10 @@ object ModelBuilder {
     } finally {
       oos.close()
     }
-
-    println("FINISHED " + Calendar.getInstance().getTime)
+    println("#### UPDATED AT " + Calendar.getInstance().getTime + " ####")
+    println("# Generated new feature vector with " + relevanceVector.size + " entries.")
+    println("# New vector saved at: " + modelPath)
+    println("# Updated document corpus at: " + textFile)
   }
 
   /**
