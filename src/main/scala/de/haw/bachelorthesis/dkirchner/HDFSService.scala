@@ -32,8 +32,8 @@ import org.apache.hadoop.fs.{FileSystem, Path}
  */
 object HDFSService {
   private val hadoopConf = new Configuration()
-  private val hdfsCoreSitePath = new Path("/opt/hadoop/etc/hadoop-2.7.0/core-site.xml")
-  private val hdfsHDFSSitePath = new Path("/opt/hadoop/etc/hadoop-2.7.0/hdfs-site.xml")
+  private val hdfsCoreSitePath = new Path("/opt/hadoop-2.7.0/etc/hadoop/core-site.xml")
+  private val hdfsHDFSSitePath = new Path("/opt/hadoop-2.7.0/etc/hadoop/hdfs-site.xml")
 
   hadoopConf.addResource(hdfsCoreSitePath)
   hadoopConf.addResource(hdfsHDFSSitePath)
@@ -54,6 +54,7 @@ object HDFSService {
       if (!hdfs.exists(path)){
         if (!hdfs.createNewFile(path)) {
           throw new IOException("Datei konnte nicht angelegt werden.")
+
         }
       }
       println("Lege Datei an: " + path.getName)
