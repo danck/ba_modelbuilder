@@ -1,10 +1,10 @@
 package de.haw.bachelorthesis.dkirchner
 
-import java.io.{FileInputStream, InputStreamReader, BufferedReader, FileReader}
+import java.io.File
 import java.util.Calendar
 
 import org.apache.hadoop.conf.Configuration
-import org.apache.hadoop.fs.{BufferedFSInputStream, FileSystem, Path}
+import org.apache.hadoop.fs.{FileSystem, Path}
 
 /*
  * This file is part of my bachelor thesis.
@@ -47,8 +47,8 @@ object HDFSService {
    * @param content
    */
   def appendToTextFile(pathToFile: String, content: String): Unit = {
-    val path = new Path(pathToFile)
-    val tempPath = new Path(pathToFile + "_" + Calendar.getInstance().getTime.toString)
+    val file = new File(pathToFile)
+    val path = new Path(file.getName)
 
     try {
       if (!hdfs.exists(path)){
