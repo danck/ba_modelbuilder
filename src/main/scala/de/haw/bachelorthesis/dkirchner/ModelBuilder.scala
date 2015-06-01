@@ -52,7 +52,6 @@ object ModelBuilder {
     val Array(textFile, account, password) = args.take(3)
     val sparkConf = new SparkConf()
       .setAppName("Model Builder")
-      .set("spark.hadoop.validateOutputSpecs", "false") // to overwrite output files
     val sc = new SparkContext(sparkConf)
 
     val newMessages = MailService.fetchFrom(account, password)

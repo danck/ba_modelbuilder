@@ -32,8 +32,8 @@ import org.apache.hadoop.fs.{FileSystem, Path}
  */
 object HDFSService {
   private val hadoopConf = new Configuration()
-  private val hdfsCoreSitePath = new Path("/opt/hadoop/etc/hadoop/core-site.xml")
-  private val hdfsHDFSSitePath = new Path("/opt/hadoop/etc/hadoop/hdfs-site.xml")
+  private val hdfsCoreSitePath = new Path("/opt/hadoop/etc/hadoop-2.7.0/core-site.xml")
+  private val hdfsHDFSSitePath = new Path("/opt/hadoop/etc/hadoop-2.7.0/hdfs-site.xml")
 
   hadoopConf.addResource(hdfsCoreSitePath)
   hadoopConf.addResource(hdfsHDFSSitePath)
