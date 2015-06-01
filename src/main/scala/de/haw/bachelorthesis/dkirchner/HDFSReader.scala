@@ -11,14 +11,14 @@ import org.apache.hadoop.conf._
 import org.apache.hadoop.fs._
 
 object HDFSFileService {
-  private val conf = new Configuration()
+  private val hadoopConf = new Configuration()
   private val hdfsCoreSitePath = new Path("/opt/hadoop/conf/core-site.xml")
   private val hdfsHDFSSitePath = new Path("/opt/hadoop/conf/hdfs-site.xml")
 
-  conf.addResource(hdfsCoreSitePath)
-  conf.addResource(hdfsHDFSSitePath)
+  hadoopConf.addResource(hdfsCoreSitePath)
+  hadoopConf.addResource(hdfsHDFSSitePath)
 
-  private val fileSystem = FileSystem.get(conf)
+  private val fileSystem = FileSystem.get(hadoopConf)
 
   def saveFile(filepath: String): Unit = {
     val file = new File(filepath)

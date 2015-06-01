@@ -65,13 +65,13 @@ object MailService {
             rawText = msg.getContent.asInstanceOf[String]
           }
 
-          // append extracted text to a newline separated message string
-          // this also performs basic filtering an normalization of the text
+          // append extracted text to a newline-separated message string
+          // this also performs basic filtering an normalization on the text
           if (rawText != "") {
             val bodyString = rawText
             val bodyLines = bodyString.split('\n')
               .filter(line => !line.trim.startsWith(">")) // remove quoted lines
-              .filter(line => !line.trim.startsWith("<")) // remove html tags
+              .filter(line => !line.trim.startsWith("<")) // remove tagged lines (html)
               .filter(line => !line.trim.startsWith("On"))
             val cleanLines = bodyLines.map(line => line.stripLineEnd) // remove newlines
             val cleanText = if (cleanLines.nonEmpty)
@@ -83,7 +83,7 @@ object MailService {
             messageTexts.append(cleanText + "\n")
           }
         } catch {
-          case uee: UnsupportedEncodingException =>  //continue
+          case uee: UnsupportedEncodingException =>  //discard current data and continue loop
         }
       })
 
