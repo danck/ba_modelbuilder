@@ -114,7 +114,7 @@ object ModelBuilder {
    * @param sv2 unifiableSparseVector
    * @return Vector that is the union of sv1 and sv2
    */
-  private def addSparseVectors(sv1: SparseVector, sv2: SparseVector): Vector = {
+  private[dkirchner] def addSparseVectors(sv1: SparseVector, sv2: SparseVector): Vector = {
     if (sv1.size != sv2.size)
       throw new IllegalArgumentException("Input vectors must be of equal size")
 
