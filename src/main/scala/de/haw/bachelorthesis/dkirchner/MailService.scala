@@ -79,7 +79,7 @@ object MailService {
               else ""
 
             counter += 1
-            println( counter.toString )
+            println( counter.toString + "\t:" + msg.getSubject )
             messageTexts.append(cleanText + "\n")
           }
         } catch {
