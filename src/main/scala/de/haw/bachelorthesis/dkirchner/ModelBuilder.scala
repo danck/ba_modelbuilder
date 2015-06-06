@@ -90,7 +90,7 @@ object ModelBuilder {
     try {
       oos.writeObject(relevanceVector)
     } catch {
-      case e: Exception => println("Exception while saving model:")
+      case e: Exception => println("Error while saving model: ")
         e.printStackTrace()
         System.exit(1)
     } finally {
