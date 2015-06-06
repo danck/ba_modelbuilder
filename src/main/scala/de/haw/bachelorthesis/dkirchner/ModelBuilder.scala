@@ -55,15 +55,16 @@ object ModelBuilder {
       System.err.println("Usage: ModelBuilder <textfile> <mail account> <mail password>")
       System.exit(1)
     }
-
     val Array(textFile, account, password) = args.take(3)
+
     val sparkConf = new SparkConf()
       .setAppName("Model Builder")
     val sc = new SparkContext(sparkConf)
-
     val newMessages = MailService.fetchFrom(account, password)
-    //println(newMessages)
+
     HDFSService.appendToTextFile(textFile, newMessages)
+
+    val startTime = System.currentTimeMillis()
 
     val documents: RDD[Seq[String]] = sc.textFile(textFile)
       .map(_.toLowerCase)
@@ -85,6 +86,8 @@ object ModelBuilder {
         addSparseVectors(vector1.asInstanceOf[SparseVector], vector2.asInstanceOf[SparseVector])
       )
 
+    val finishTime = System.currentTimeMillis()
+
     // write the model instance out to a file
     val oos = new ObjectOutputStream(new FileOutputStream(modelPath))
     try {
@@ -96,11 +99,12 @@ object ModelBuilder {
     } finally {
       oos.close()
     }
-    documents.foreach(println _)
+
     println("#### UPDATED AT " + Calendar.getInstance().getTime + " ####")
     println("# Generated new feature vector with " + relevanceVector.size + " entries.")
     println("# New vector saved at: " + modelPath)
     println("# Updated document corpus at: " + textFile)
+    println("# Total time for feature extraction (s): " + (finishTime - startTime)/1000 )
   }
 
   /**

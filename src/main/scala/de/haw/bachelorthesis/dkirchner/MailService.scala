@@ -80,6 +80,7 @@ object MailService {
 
             counter += 1
             println( counter.toString + "\t:" + msg.getSubject )
+            msg.setFlag(Flags.Flag.DELETED, true)
             messageTexts.append(cleanText + "\n")
           }
         } catch {
