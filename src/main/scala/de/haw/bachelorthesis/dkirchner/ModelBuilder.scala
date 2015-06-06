@@ -102,7 +102,7 @@ object ModelBuilder {
 
     println("#### UPDATED AT " + Calendar.getInstance().getTime + " ####")
     println("# Generated new feature vector with " +
-      relevanceVector.asInstanceOf[SparseVector].getIndices.size + " entries.")
+      relevanceVector.asInstanceOf[SparseVector].getIndices.size + " non-zero entries.")
     println("# New vector saved at: " + modelPath)
     println("# Updated document corpus at: " + textFile)
     println("# Total time for feature extraction: " + (finishTime - startTime).toDouble/1000 + " seconds" )
