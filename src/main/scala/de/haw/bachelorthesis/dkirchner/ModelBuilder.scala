@@ -69,6 +69,8 @@ object ModelBuilder {
       .map(_.toLowerCase)
       .map(_.split(" ").filter(_.length > 2).toSeq)
 
+    documents.cache()
+
     val hashingTF = new HashingTF(1 << 20)
     val tf: RDD[Vector] = hashingTF.transform(documents)
 
@@ -94,7 +96,7 @@ object ModelBuilder {
     } finally {
       oos.close()
     }
-    println(relevanceVector)
+    documents.foreach(println _)
     println("#### UPDATED AT " + Calendar.getInstance().getTime + " ####")
     println("# Generated new feature vector with " + relevanceVector.size + " entries.")
     println("# New vector saved at: " + modelPath)

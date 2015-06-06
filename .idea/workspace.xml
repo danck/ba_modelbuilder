@@ -124,11 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModelBuilder.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ModelBuilder.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/ModelBuilder.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="101" column="3" selection-start-line="101" selection-start-column="3" selection-end-line="101" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.6245259">
+              <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
               <folding>
                 <element signature="e#41#894#0" expanded="false" />
               </folding>
@@ -156,11 +156,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MailService.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MailService.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/MailService.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37420985">
-              <caret line="71" column="33" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="77" column="41" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -200,8 +200,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/HDFSReader.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/de/haw/bachelorthesis/dkirchner/tests/ModelBuilderTests.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/HDFSService.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/ModelBuilder.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/MailService.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/ModelBuilder.scala" />
       </list>
     </option>
   </component>
@@ -1156,21 +1156,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/ModelBuilder.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/MailService.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="3" selection-start-line="101" selection-start-column="3" selection-end-line="101" selection-end-column="3" />
-          <folding>
-            <element signature="e#41#894#0" expanded="false" />
-          </folding>
+          <caret line="77" column="41" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/MailService.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/ModelBuilder.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37420985">
-          <caret line="71" column="33" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-          <folding />
+        <state vertical-scroll-proportion="0.6245259">
+          <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+          <folding>
+            <element signature="e#41#894#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
