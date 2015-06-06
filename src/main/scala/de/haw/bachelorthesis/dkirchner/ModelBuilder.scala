@@ -34,7 +34,11 @@ import org.apache.spark.mllib.linalg.{SparseVector, Vectors, Vector}
 
 
 /**
- *
+ *  Entry class for model builder. This component periodically fetches new emails and
+ *  appends the extracted message bodies to a corpus of older messages.<br/>
+ *  It then scores the words from each message by building a IDF-vector from the corpus
+ *  and then applying it to a TF-vector of the latest <code>n</code> messages
+ *  (<code>n</code> being the window size).
  */
 object ModelBuilder {
   // number of messages to build the relevance model from
@@ -58,7 +62,7 @@ object ModelBuilder {
     val sc = new SparkContext(sparkConf)
 
     val newMessages = MailService.fetchFrom(account, password)
-    println(newMessages)
+    //println(newMessages)
     HDFSService.appendToTextFile(textFile, newMessages)
 
     val documents: RDD[Seq[String]] = sc.textFile(textFile)
@@ -68,7 +72,7 @@ object ModelBuilder {
     val hashingTF = new HashingTF(1 << 20)
     val tf: RDD[Vector] = hashingTF.transform(documents)
 
-    tf.cache()
+    tf.cache() // keep the tf cached because we will be using it two times
 
     val idf = new IDF().fit(tf)
     val tfidf: RDD[Vector] = idf.transform(tf)
@@ -90,6 +94,7 @@ object ModelBuilder {
     } finally {
       oos.close()
     }
+    println(relevanceVector)
     println("#### UPDATED AT " + Calendar.getInstance().getTime + " ####")
     println("# Generated new feature vector with " + relevanceVector.size + " entries.")
     println("# New vector saved at: " + modelPath)
@@ -98,7 +103,7 @@ object ModelBuilder {
 
   /**
    * Extends the class Spark SparseVector implementation by attribute getters.
-   * This is a helper class for the local method mergeSparseVectors
+   * This is a helper class for the local method addSparseVectors
    * @param sv Regular SparseVector to be extended
    */
   private implicit class UnifiableSparseVector(sv: SparseVector) {
@@ -129,6 +134,6 @@ object ModelBuilder {
 
     val result = Vectors.sparse(sv1.size, indices, values)
 
-    result
+    return result
   }
 }
