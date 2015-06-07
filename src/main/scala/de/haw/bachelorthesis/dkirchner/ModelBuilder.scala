@@ -60,11 +60,14 @@ object ModelBuilder {
     val sparkConf = new SparkConf()
       .setAppName("Model Builder")
     val sc = new SparkContext(sparkConf)
+
+    val beginMessageRetrieval = System.currentTimeMillis()
     val newMessages = MailService.fetchFrom(account, password)
+    val finishMessageRetrieval = System.currentTimeMillis()
 
     HDFSService.appendToTextFile(textFile, newMessages)
 
-    val startTime = System.currentTimeMillis()
+    val beginFeatureExtraction = System.currentTimeMillis()
 
     val documents: RDD[Seq[String]] = sc.textFile(textFile)
       .map(_.toLowerCase)
@@ -75,7 +78,7 @@ object ModelBuilder {
     val hashingTF = new HashingTF(1 << 20)
     val tf: RDD[Vector] = hashingTF.transform(documents)
 
-    tf.cache() // keep the tf cached because we will be using it two times
+    tf.cache() // keep the tf cached because we will be using it twice
 
     val idf = new IDF().fit(tf)
     val tfidf: RDD[Vector] = idf.transform(tf)
@@ -86,26 +89,33 @@ object ModelBuilder {
         addSparseVectors(vector1.asInstanceOf[SparseVector], vector2.asInstanceOf[SparseVector])
       )
 
-    val finishTime = System.currentTimeMillis()
+    val finishFeatureExtraction = System.currentTimeMillis()
 
     // write the model instance out to a file
     val oos = new ObjectOutputStream(new FileOutputStream(modelPath))
     try {
       oos.writeObject(relevanceVector)
     } catch {
-      case e: Exception => println("Error while saving model: ")
+      case e: Exception =>
+        println("Error while saving model: ")
         e.printStackTrace()
         System.exit(1)
     } finally {
       oos.close()
     }
 
+    // Report
     println("#### UPDATED AT " + Calendar.getInstance().getTime + " ####")
     println("# Generated new feature vector with " +
-      relevanceVector.asInstanceOf[SparseVector].getIndices.size + " non-zero entries.")
+      relevanceVector.asInstanceOf[SparseVector].getIndices.size + " non-zero entries  (" +
+      ((relevanceVector.asInstanceOf[SparseVector].getIndices.size.toDouble / relevanceVector.size) * 100)
+      + "% density)")
     println("# New vector saved at: " + modelPath)
     println("# Updated document corpus at: " + textFile)
-    println("# Total time for feature extraction: " + (finishTime - startTime).toDouble/1000 + " seconds" )
+    println("# Total time for message retrieval: " +
+      (finishMessageRetrieval - beginMessageRetrieval).toDouble/1000 + " seconds" )
+    println("# Total time for feature extraction: " +
+      (finishFeatureExtraction - beginFeatureExtraction).toDouble/1000 + " seconds" )
   }
 
   /**

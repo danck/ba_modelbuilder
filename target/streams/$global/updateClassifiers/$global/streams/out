@@ -6,7 +6,7 @@
 [debug] == resolving dependencies for model-builder#model-builder$sources_javadoc_2.10;1.0 [compile]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@c780c9b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6ff88d5c
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	local: revision in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
@@ -16,7 +16,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.scala-lang#scala-library;2.10.4 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.spark#spark-mllib_2.10;1.3.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-mllib_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@72f8d540
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@55eb493e
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-mllib_2.10;1.3.0
 [debug] 	local: revision in cache: org.apache.spark#spark-mllib_2.10;1.3.0
 [debug] 	found org.apache.spark#spark-mllib_2.10;1.3.0 in sbt-chain
@@ -25,7 +25,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.spark#spark-mllib_2.10;1.3.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.spark#spark-core_2.10;1.3.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-core_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c48946d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@38ab7c04
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-core_2.10;1.3.0
 [debug] 	local: revision in cache: org.apache.spark#spark-core_2.10;1.3.0
 [debug] 	found org.apache.spark#spark-core_2.10;1.3.0 in sbt-chain
@@ -34,7 +34,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.spark#spark-core_2.10;1.3.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.twitter#chill_2.10;0.5.0 [compile->default(compile)]
 [info] Resolving com.twitter#chill_2.10;0.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@470aa1cb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@691ba3be
 [debug] sbt-chain: module revision found in cache: com.twitter#chill_2.10;0.5.0
 [debug] 	local: revision in cache: com.twitter#chill_2.10;0.5.0
 [debug] 	found com.twitter#chill_2.10;0.5.0 in sbt-chain
@@ -43,7 +43,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.twitter#chill_2.10;0.5.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.twitter#chill-java;0.5.0 [compile->default(compile)]
 [info] Resolving com.twitter#chill-java;0.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@9621e5d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@761cc6f1
 [debug] sbt-chain: module revision found in cache: com.twitter#chill-java;0.5.0
 [debug] 	local: revision in cache: com.twitter#chill-java;0.5.0
 [debug] 	found com.twitter#chill-java;0.5.0 in sbt-chain
@@ -52,7 +52,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.twitter#chill-java;0.5.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->default(compile)]
 [info] Resolving com.esotericsoftware.kryo#kryo;2.21 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7214e00b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6b1fabd0
 [debug] sbt-chain: module revision found in cache: com.esotericsoftware.kryo#kryo;2.21
 [debug] 	local: revision in cache: com.esotericsoftware.kryo#kryo;2.21
 [debug] 	found com.esotericsoftware.kryo#kryo;2.21 in sbt-chain
@@ -61,7 +61,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->default(compile)]
 [info] Resolving com.esotericsoftware.reflectasm#reflectasm;1.07 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4a2746c7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@369622c5
 [debug] sbt-chain: module revision found in cache: com.esotericsoftware.reflectasm#reflectasm;1.07
 [debug] 	local: revision in cache: com.esotericsoftware.reflectasm#reflectasm;1.07
 [debug] 	found com.esotericsoftware.reflectasm#reflectasm;1.07 in sbt-chain
@@ -70,7 +70,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.esotericsoftware.minlog#minlog;1.2 [compile->default(compile)]
 [info] Resolving com.esotericsoftware.minlog#minlog;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@185f7da9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@683891f9
 [debug] sbt-chain: module revision found in cache: com.esotericsoftware.minlog#minlog;1.2
 [debug] 	local: revision in cache: com.esotericsoftware.minlog#minlog;1.2
 [debug] 	found com.esotericsoftware.minlog#minlog;1.2 in sbt-chain
@@ -79,7 +79,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.esotericsoftware.minlog#minlog;1.2 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.objenesis#objenesis;1.2 [compile->default(compile)]
 [info] Resolving org.objenesis#objenesis;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@19fc2fcb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@29643311
 [debug] sbt-chain: module revision found in cache: org.objenesis#objenesis;1.2
 [debug] 	local: revision in cache: org.objenesis#objenesis;1.2
 [debug] 	found org.objenesis#objenesis;1.2 in sbt-chain
@@ -88,7 +88,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.objenesis#objenesis;1.2 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-client;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6fc5d92f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2086789a
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-client;2.2.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-client;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-client;2.2.0 in sbt-chain
@@ -97,7 +97,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-common;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3616f54
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52c15780
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-common;2.2.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-common;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-common;2.2.0 in sbt-chain
@@ -106,7 +106,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-common;2.2.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-annotations;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-annotations;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@15ba74ff
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@e202e24
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-annotations;2.2.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-annotations;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-annotations;2.2.0 in sbt-chain
@@ -115,7 +115,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-annotations;2.2.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-cli#commons-cli;1.2 [compile->default(compile)]
 [info] Resolving commons-cli#commons-cli;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@59dc2fd1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2bf110cd
 [debug] sbt-chain: module revision found in cache: commons-cli#commons-cli;1.2
 [debug] 	local: revision in cache: commons-cli#commons-cli;1.2
 [debug] 	found commons-cli#commons-cli;1.2 in sbt-chain
@@ -124,7 +124,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-cli#commons-cli;1.2 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.commons#commons-math;2.1 [compile->default(compile)]
 [info] Resolving org.apache.commons#commons-math;2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3dcb5d5e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e11fd1c
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-math;2.1
 [debug] 	local: revision in cache: org.apache.commons#commons-math;2.1
 [debug] 	found org.apache.commons#commons-math;2.1 in sbt-chain
@@ -133,7 +133,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.commons#commons-math;2.1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-httpclient#commons-httpclient;3.1 [compile->default(compile)]
 [info] Resolving commons-httpclient#commons-httpclient;3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e0e7266
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@47f9a0f1
 [debug] sbt-chain: module revision found in cache: commons-httpclient#commons-httpclient;3.1
 [debug] 	local: revision in cache: commons-httpclient#commons-httpclient;3.1
 [debug] 	found commons-httpclient#commons-httpclient;3.1 in sbt-chain
@@ -142,7 +142,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-httpclient#commons-httpclient;3.1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-logging#commons-logging;1.1.1 [compile->default(compile)]
 [info] Resolving commons-logging#commons-logging;1.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@63b90ba2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@41692d14
 [debug] sbt-chain: module revision found in cache: commons-logging#commons-logging;1.1.1
 [debug] 	local: revision in cache: commons-logging#commons-logging;1.1.1
 [debug] 	found commons-logging#commons-logging;1.1.1 in sbt-chain
@@ -151,7 +151,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-logging#commons-logging;1.1.1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->log4j#log4j;1.2.17 [compile->default(compile)]
 [info] Resolving log4j#log4j;1.2.17 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@129fed9e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@663e5637
 [debug] sbt-chain: module revision found in cache: log4j#log4j;1.2.17
 [debug] 	local: revision in cache: log4j#log4j;1.2.17
 [debug] 	found log4j#log4j;1.2.17 in sbt-chain
@@ -160,7 +160,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->log4j#log4j;1.2.17 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-lang#commons-lang;2.5 [compile->default(compile)]
 [info] Resolving commons-lang#commons-lang;2.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7cf4b2df
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@77ff3c1e
 [debug] sbt-chain: module revision found in cache: commons-lang#commons-lang;2.5
 [debug] 	local: revision in cache: commons-lang#commons-lang;2.5
 [debug] 	found commons-lang#commons-lang;2.5 in sbt-chain
@@ -169,7 +169,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-lang#commons-lang;2.5 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-configuration#commons-configuration;1.6 [compile->default(compile)]
 [info] Resolving commons-configuration#commons-configuration;1.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5aca3771
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4fe5d038
 [debug] sbt-chain: module revision found in cache: commons-configuration#commons-configuration;1.6
 [debug] 	local: revision in cache: commons-configuration#commons-configuration;1.6
 [debug] 	found commons-configuration#commons-configuration;1.6 in sbt-chain
@@ -178,7 +178,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-configuration#commons-configuration;1.6 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-collections#commons-collections;3.2.1 [compile->default(compile)]
 [info] Resolving commons-collections#commons-collections;3.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5793327
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@62f0106b
 [debug] sbt-chain: module revision found in cache: commons-collections#commons-collections;3.2.1
 [debug] 	local: revision in cache: commons-collections#commons-collections;3.2.1
 [debug] 	found commons-collections#commons-collections;3.2.1 in sbt-chain
@@ -187,7 +187,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-collections#commons-collections;3.2.1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-digester#commons-digester;1.8 [compile->default(compile)]
 [info] Resolving commons-digester#commons-digester;1.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@71204e9f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e7b8425
 [debug] sbt-chain: module revision found in cache: commons-digester#commons-digester;1.8
 [debug] 	local: revision in cache: commons-digester#commons-digester;1.8
 [debug] 	found commons-digester#commons-digester;1.8 in sbt-chain
@@ -196,7 +196,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-digester#commons-digester;1.8 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-beanutils#commons-beanutils;1.7.0 [compile->default(compile)]
 [info] Resolving commons-beanutils#commons-beanutils;1.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2dc1b0f0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@401fe66a
 [debug] sbt-chain: module revision found in cache: commons-beanutils#commons-beanutils;1.7.0
 [debug] 	local: revision in cache: commons-beanutils#commons-beanutils;1.7.0
 [debug] 	found commons-beanutils#commons-beanutils;1.7.0 in sbt-chain
@@ -205,7 +205,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-beanutils#commons-beanutils;1.7.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.avro#avro;1.7.4 [compile->default(compile)]
 [info] Resolving org.apache.avro#avro;1.7.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2cb171e2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c09925e
 [debug] sbt-chain: module revision found in cache: org.apache.avro#avro;1.7.4
 [debug] 	local: revision in cache: org.apache.avro#avro;1.7.4
 [debug] 	found org.apache.avro#avro;1.7.4 in sbt-chain
@@ -214,7 +214,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.avro#avro;1.7.4 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.commons#commons-compress;1.4.1 [compile->default(compile)]
 [info] Resolving org.apache.commons#commons-compress;1.4.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@194dded8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5e90f2e8
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-compress;1.4.1
 [debug] 	local: revision in cache: org.apache.commons#commons-compress;1.4.1
 [debug] 	found org.apache.commons#commons-compress;1.4.1 in sbt-chain
@@ -223,7 +223,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.commons#commons-compress;1.4.1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.tukaani#xz;1.0 [compile->default(compile)]
 [info] Resolving org.tukaani#xz;1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@40635c39
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3d496d16
 [debug] sbt-chain: module revision found in cache: org.tukaani#xz;1.0
 [debug] 	local: revision in cache: org.tukaani#xz;1.0
 [debug] 	found org.tukaani#xz;1.0 in sbt-chain
@@ -232,7 +232,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.tukaani#xz;1.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.google.protobuf#protobuf-java;2.5.0 [compile->default(compile)]
 [info] Resolving com.google.protobuf#protobuf-java;2.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1ddc6afe
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@366808a7
 [debug] sbt-chain: module revision found in cache: com.google.protobuf#protobuf-java;2.5.0
 [debug] 	local: revision in cache: com.google.protobuf#protobuf-java;2.5.0
 [debug] 	found com.google.protobuf#protobuf-java;2.5.0 in sbt-chain
@@ -241,7 +241,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.google.protobuf#protobuf-java;2.5.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-auth;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-auth;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@621e15c4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1663ec2d
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-auth;2.2.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-auth;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-auth;2.2.0 in sbt-chain
@@ -250,7 +250,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-auth;2.2.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-hdfs;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-hdfs;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@72ec8d6b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@757ec95e
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-hdfs;2.2.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-hdfs;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-hdfs;2.2.0 in sbt-chain
@@ -259,7 +259,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-hdfs;2.2.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.mortbay.jetty#jetty-util;6.1.26 [compile->default(compile)]
 [info] Resolving org.mortbay.jetty#jetty-util;6.1.26 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@26651843
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@45fab267
 [debug] sbt-chain: module revision found in cache: org.mortbay.jetty#jetty-util;6.1.26
 [debug] 	local: revision in cache: org.mortbay.jetty#jetty-util;6.1.26
 [debug] 	found org.mortbay.jetty#jetty-util;6.1.26 in sbt-chain
@@ -268,7 +268,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.mortbay.jetty#jetty-util;6.1.26 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@510de4c7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ff3062f
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 in sbt-chain
@@ -277,7 +277,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7fab87bb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2b1681e
 [debug] 		tried C:\Users\Daniel\.ivy2\local\org.apache.hadoop\hadoop-mapreduce-client-common\2.2.0\ivys\ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0
 [debug] 		tried http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom
@@ -287,7 +287,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0!hadoop-mapreduce-client-common.pom(pom.original) (423ms)
+[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0!hadoop-mapreduce-client-common.pom(pom.original) (474ms)
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client;2.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-mapreduce-client;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client;2.2.0
@@ -298,7 +298,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-yarn-common;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6eedcfc1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12ba04ba
 [debug] 		tried C:\Users\Daniel\.ivy2\local\org.apache.hadoop\hadoop-yarn-common\2.2.0\ivys\ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-yarn-common;2.2.0
 [debug] 		tried http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom
@@ -308,7 +308,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-common;2.2.0!hadoop-yarn-common.pom(pom.original) (450ms)
+[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-common;2.2.0!hadoop-yarn-common.pom(pom.original) (1026ms)
 [info] Resolving org.apache.hadoop#hadoop-yarn;2.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-yarn;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn;2.2.0
@@ -319,7 +319,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-yarn-common;2.2.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-yarn-api;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-api;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@671b9f73
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c014e8c
 [debug] 		tried C:\Users\Daniel\.ivy2\local\org.apache.hadoop\hadoop-yarn-api\2.2.0\ivys\ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-yarn-api;2.2.0
 [debug] 		tried http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom
@@ -329,7 +329,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-api;2.2.0!hadoop-yarn-api.pom(pom.original) (542ms)
+[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-api;2.2.0!hadoop-yarn-api.pom(pom.original) (415ms)
 [info] Resolving org.apache.hadoop#hadoop-yarn;2.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-yarn;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn;2.2.0
@@ -340,7 +340,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-yarn-api;2.2.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.google.inject#guice;3.0 [compile->default(compile)]
 [info] Resolving com.google.inject#guice;3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6fc6fea7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@58a79b8b
 [debug] sbt-chain: module revision found in cache: com.google.inject#guice;3.0
 [debug] 	local: revision in cache: com.google.inject#guice;3.0
 [debug] 	found com.google.inject#guice;3.0 in sbt-chain
@@ -349,7 +349,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.google.inject#guice;3.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->javax.inject#javax.inject;1 [compile->default(compile)]
 [info] Resolving javax.inject#javax.inject;1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@51fa017f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@19422840
 [debug] sbt-chain: module revision found in cache: javax.inject#javax.inject;1
 [debug] 	local: revision in cache: javax.inject#javax.inject;1
 [debug] 	found javax.inject#javax.inject;1 in sbt-chain
@@ -358,7 +358,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->javax.inject#javax.inject;1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->aopalliance#aopalliance;1.0 [compile->default(compile)]
 [info] Resolving aopalliance#aopalliance;1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@c6d4bb6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@68219b77
 [debug] sbt-chain: module revision found in cache: aopalliance#aopalliance;1.0
 [debug] 	local: revision in cache: aopalliance#aopalliance;1.0
 [debug] 	found aopalliance#aopalliance;1.0 in sbt-chain
@@ -367,7 +367,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->aopalliance#aopalliance;1.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.sonatype.sisu.inject#cglib;2.2.1-v20090111 [compile->default(compile)]
 [info] Resolving org.sonatype.sisu.inject#cglib;2.2.1-v20090111 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d3f83e2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@72fc4d71
 [debug] sbt-chain: module revision found in cache: org.sonatype.sisu.inject#cglib;2.2.1-v20090111
 [debug] 	local: revision in cache: org.sonatype.sisu.inject#cglib;2.2.1-v20090111
 [debug] 	found org.sonatype.sisu.inject#cglib;2.2.1-v20090111 in sbt-chain
@@ -376,7 +376,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.sonatype.sisu.inject#cglib;2.2.1-v20090111 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 [compile->default(compile)]
 [info] Resolving com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@d631dc1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@69a2556e
 [debug] sbt-chain: module revision found in cache: com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9
 [debug] 	local: revision in cache: com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9
 [debug] 	found com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 in sbt-chain
@@ -385,7 +385,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.sun.jersey#jersey-server;1.9 [compile->default(compile)]
 [info] Resolving com.sun.jersey#jersey-server;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7cb3552d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56a84985
 [debug] sbt-chain: module revision found in cache: com.sun.jersey#jersey-server;1.9
 [debug] 	local: revision in cache: com.sun.jersey#jersey-server;1.9
 [debug] 	found com.sun.jersey#jersey-server;1.9 in sbt-chain
@@ -394,7 +394,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.sun.jersey#jersey-server;1.9 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.sun.jersey#jersey-json;1.9 [compile->default(compile)]
 [info] Resolving com.sun.jersey#jersey-json;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6181c7a4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@16444633
 [debug] sbt-chain: module revision found in cache: com.sun.jersey#jersey-json;1.9
 [debug] 	local: revision in cache: com.sun.jersey#jersey-json;1.9
 [debug] 	found com.sun.jersey#jersey-json;1.9 in sbt-chain
@@ -403,7 +403,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.sun.jersey#jersey-json;1.9 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.codehaus.jettison#jettison;1.1 [compile->default(compile)]
 [info] Resolving org.codehaus.jettison#jettison;1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@20e9a0d2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2db4da46
 [debug] sbt-chain: module revision found in cache: org.codehaus.jettison#jettison;1.1
 [debug] 	local: revision in cache: org.codehaus.jettison#jettison;1.1
 [debug] 	found org.codehaus.jettison#jettison;1.1 in sbt-chain
@@ -412,7 +412,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.codehaus.jettison#jettison;1.1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.sun.xml.bind#jaxb-impl;2.2.3-1 [compile->default(compile)]
 [info] Resolving com.sun.xml.bind#jaxb-impl;2.2.3-1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@a8dc60
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7776650
 [debug] sbt-chain: module revision found in cache: com.sun.xml.bind#jaxb-impl;2.2.3-1
 [debug] 	local: revision in cache: com.sun.xml.bind#jaxb-impl;2.2.3-1
 [debug] 	found com.sun.xml.bind#jaxb-impl;2.2.3-1 in sbt-chain
@@ -421,7 +421,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.sun.xml.bind#jaxb-impl;2.2.3-1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->javax.xml.bind#jaxb-api;2.2.2 [compile->default(compile)]
 [info] Resolving javax.xml.bind#jaxb-api;2.2.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@59a2363b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2115d1f1
 [debug] sbt-chain: module revision found in cache: javax.xml.bind#jaxb-api;2.2.2
 [debug] 	local: revision in cache: javax.xml.bind#jaxb-api;2.2.2
 [debug] 	found javax.xml.bind#jaxb-api;2.2.2 in sbt-chain
@@ -430,7 +430,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->javax.xml.bind#jaxb-api;2.2.2 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->javax.activation#activation;1.1 [compile->default(compile)]
 [info] Resolving javax.activation#activation;1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@35115dce
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2684263
 [debug] sbt-chain: module revision found in cache: javax.activation#activation;1.1
 [debug] 	local: revision in cache: javax.activation#activation;1.1
 [debug] 	found javax.activation#activation;1.1 in sbt-chain
@@ -439,7 +439,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->javax.activation#activation;1.1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.codehaus.jackson#jackson-jaxrs;1.8.8 [compile->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-jaxrs;1.8.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56fb0b6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@795dfe9b
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-jaxrs;1.8.8
 [debug] 	local: revision in cache: org.codehaus.jackson#jackson-jaxrs;1.8.8
 [debug] 	found org.codehaus.jackson#jackson-jaxrs;1.8.8 in sbt-chain
@@ -448,7 +448,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.codehaus.jackson#jackson-jaxrs;1.8.8 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.codehaus.jackson#jackson-xc;1.8.8 [compile->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-xc;1.8.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7006b9aa
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4396944d
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-xc;1.8.8
 [debug] 	local: revision in cache: org.codehaus.jackson#jackson-xc;1.8.8
 [debug] 	found org.codehaus.jackson#jackson-xc;1.8.8 in sbt-chain
@@ -457,7 +457,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.codehaus.jackson#jackson-xc;1.8.8 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.sun.jersey.contribs#jersey-guice;1.9 [compile->default(compile)]
 [info] Resolving com.sun.jersey.contribs#jersey-guice;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@9348824
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2da157e
 [debug] sbt-chain: module revision found in cache: com.sun.jersey.contribs#jersey-guice;1.9
 [debug] 	local: revision in cache: com.sun.jersey.contribs#jersey-guice;1.9
 [debug] 	found com.sun.jersey.contribs#jersey-guice;1.9 in sbt-chain
@@ -466,7 +466,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.sun.jersey.contribs#jersey-guice;1.9 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-yarn-client;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-client;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2557d0c5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@423fff28
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn-client;2.2.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-yarn-client;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-yarn-client;2.2.0 in sbt-chain
@@ -475,7 +475,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-yarn-client;2.2.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3b26289b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@119d5336
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 in sbt-chain
@@ -484,7 +484,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-yarn-server-common;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-server-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@51b4e2cf
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@546602ec
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn-server-common;2.2.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-yarn-server-common;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-yarn-server-common;2.2.0 in sbt-chain
@@ -493,7 +493,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-yarn-server-common;2.2.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@53dac38d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4676709c
 [debug] 		tried C:\Users\Daniel\.ivy2\local\org.apache.hadoop\hadoop-mapreduce-client-shuffle\2.2.0\ivys\ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0
 [debug] 		tried http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom
@@ -503,7 +503,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0!hadoop-mapreduce-client-shuffle.pom(pom.original) (399ms)
+[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0!hadoop-mapreduce-client-shuffle.pom(pom.original) (673ms)
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client;2.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-mapreduce-client;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client;2.2.0
@@ -514,7 +514,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5314b0fe
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5759641e
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 in sbt-chain
@@ -523,7 +523,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.spark#spark-network-common_2.10;1.3.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-network-common_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4eb42242
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4b6822aa
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-network-common_2.10;1.3.0
 [debug] 	local: revision in cache: org.apache.spark#spark-network-common_2.10;1.3.0
 [debug] 	found org.apache.spark#spark-network-common_2.10;1.3.0 in sbt-chain
@@ -532,7 +532,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.spark#spark-network-common_2.10;1.3.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->io.netty#netty-all;4.0.23.Final [compile->default(compile)]
 [info] Resolving io.netty#netty-all;4.0.23.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1cc81ab6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5b4adcdc
 [debug] sbt-chain: module revision found in cache: io.netty#netty-all;4.0.23.Final
 [debug] 	local: revision in cache: io.netty#netty-all;4.0.23.Final
 [debug] 	found io.netty#netty-all;4.0.23.Final in sbt-chain
@@ -541,7 +541,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->io.netty#netty-all;4.0.23.Final [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.spark-project.spark#unused;1.0.0 [compile->default(compile)]
 [info] Resolving org.spark-project.spark#unused;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1e52b7a0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2b21cf7b
 [debug] sbt-chain: module revision found in cache: org.spark-project.spark#unused;1.0.0
 [debug] 	local: revision in cache: org.spark-project.spark#unused;1.0.0
 [debug] 	found org.spark-project.spark#unused;1.0.0 in sbt-chain
@@ -550,7 +550,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.spark-project.spark#unused;1.0.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.spark#spark-network-shuffle_2.10;1.3.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-network-shuffle_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@76702ca1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6f77d5a9
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-network-shuffle_2.10;1.3.0
 [debug] 	local: revision in cache: org.apache.spark#spark-network-shuffle_2.10;1.3.0
 [debug] 	found org.apache.spark#spark-network-shuffle_2.10;1.3.0 in sbt-chain
@@ -559,7 +559,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.spark#spark-network-shuffle_2.10;1.3.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->net.java.dev.jets3t#jets3t;0.7.1 [compile->default(compile)]
 [info] Resolving net.java.dev.jets3t#jets3t;0.7.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e7d180f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2ef10b7d
 [debug] sbt-chain: module revision found in cache: net.java.dev.jets3t#jets3t;0.7.1
 [debug] 	local: revision in cache: net.java.dev.jets3t#jets3t;0.7.1
 [debug] 	found net.java.dev.jets3t#jets3t;0.7.1 in sbt-chain
@@ -568,7 +568,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->net.java.dev.jets3t#jets3t;0.7.1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.curator#curator-recipes;2.4.0 [compile->default(compile)]
 [info] Resolving org.apache.curator#curator-recipes;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6d2aba1c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7bfbe6d0
 [debug] sbt-chain: module revision found in cache: org.apache.curator#curator-recipes;2.4.0
 [debug] 	local: revision in cache: org.apache.curator#curator-recipes;2.4.0
 [debug] 	found org.apache.curator#curator-recipes;2.4.0 in sbt-chain
@@ -577,7 +577,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.curator#curator-recipes;2.4.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.curator#curator-framework;2.4.0 [compile->default(compile)]
 [info] Resolving org.apache.curator#curator-framework;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@393b58c2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@616ef833
 [debug] sbt-chain: module revision found in cache: org.apache.curator#curator-framework;2.4.0
 [debug] 	local: revision in cache: org.apache.curator#curator-framework;2.4.0
 [debug] 	found org.apache.curator#curator-framework;2.4.0 in sbt-chain
@@ -586,7 +586,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.curator#curator-framework;2.4.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.curator#curator-client;2.4.0 [compile->default(compile)]
 [info] Resolving org.apache.curator#curator-client;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@386620ec
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@168aa459
 [debug] sbt-chain: module revision found in cache: org.apache.curator#curator-client;2.4.0
 [debug] 	local: revision in cache: org.apache.curator#curator-client;2.4.0
 [debug] 	found org.apache.curator#curator-client;2.4.0 in sbt-chain
@@ -595,7 +595,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.curator#curator-client;2.4.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.zookeeper#zookeeper;3.4.5 [compile->default(compile)]
 [info] Resolving org.apache.zookeeper#zookeeper;3.4.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7786d46f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@538ccb7a
 [debug] sbt-chain: module revision found in cache: org.apache.zookeeper#zookeeper;3.4.5
 [debug] 	local: revision in cache: org.apache.zookeeper#zookeeper;3.4.5
 [debug] 	found org.apache.zookeeper#zookeeper;3.4.5 in sbt-chain
@@ -604,7 +604,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.zookeeper#zookeeper;3.4.5 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->jline#jline;0.9.94 [compile->default(compile)]
 [info] Resolving jline#jline;0.9.94 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5ed60495
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7ee536b5
 [debug] sbt-chain: module revision found in cache: jline#jline;0.9.94
 [debug] 	local: revision in cache: jline#jline;0.9.94
 [debug] 	found jline#jline;0.9.94 in sbt-chain
@@ -613,7 +613,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->jline#jline;0.9.94 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.google.guava#guava;14.0.1 [compile->default(compile)]
 [info] Resolving com.google.guava#guava;14.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@51c1771d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4216e876
 [debug] sbt-chain: module revision found in cache: com.google.guava#guava;14.0.1
 [debug] 	local: revision in cache: com.google.guava#guava;14.0.1
 [debug] 	found com.google.guava#guava;14.0.1 in sbt-chain
@@ -622,7 +622,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.google.guava#guava;14.0.1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [compile->default(compile)]
 [info] Resolving org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@ab7077
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5fdbe73a
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016
 [debug] 	local: revision in cache: org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016
 [debug] 	found org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 in sbt-chain
@@ -631,7 +631,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.commons#commons-lang3;3.3.2 [compile->default(compile)]
 [info] Resolving org.apache.commons#commons-lang3;3.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@631f7be2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@73e48c03
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-lang3;3.3.2
 [debug] 	local: revision in cache: org.apache.commons#commons-lang3;3.3.2
 [debug] 	found org.apache.commons#commons-lang3;3.3.2 in sbt-chain
@@ -640,7 +640,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.commons#commons-lang3;3.3.2 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.commons#commons-math3;3.1.1 [compile->default(compile)]
 [info] Resolving org.apache.commons#commons-math3;3.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@ca892b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4f70df69
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-math3;3.1.1
 [debug] 	local: revision in cache: org.apache.commons#commons-math3;3.1.1
 [debug] 	found org.apache.commons#commons-math3;3.1.1 in sbt-chain
@@ -649,7 +649,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.commons#commons-math3;3.1.1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.slf4j#slf4j-api;1.7.10 [compile->default(compile)]
 [info] Resolving org.slf4j#slf4j-api;1.7.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@25e8745e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52df7778
 [debug] sbt-chain: module revision found in cache: org.slf4j#slf4j-api;1.7.10
 [debug] 	local: revision in cache: org.slf4j#slf4j-api;1.7.10
 [debug] 	found org.slf4j#slf4j-api;1.7.10 in sbt-chain
@@ -658,7 +658,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.slf4j#slf4j-api;1.7.10 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.slf4j#jul-to-slf4j;1.7.10 [compile->default(compile)]
 [info] Resolving org.slf4j#jul-to-slf4j;1.7.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@128abb45
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@492ecd16
 [debug] sbt-chain: module revision found in cache: org.slf4j#jul-to-slf4j;1.7.10
 [debug] 	local: revision in cache: org.slf4j#jul-to-slf4j;1.7.10
 [debug] 	found org.slf4j#jul-to-slf4j;1.7.10 in sbt-chain
@@ -667,7 +667,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.slf4j#jul-to-slf4j;1.7.10 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.slf4j#jcl-over-slf4j;1.7.10 [compile->default(compile)]
 [info] Resolving org.slf4j#jcl-over-slf4j;1.7.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@df62ca9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@77956554
 [debug] sbt-chain: module revision found in cache: org.slf4j#jcl-over-slf4j;1.7.10
 [debug] 	local: revision in cache: org.slf4j#jcl-over-slf4j;1.7.10
 [debug] 	found org.slf4j#jcl-over-slf4j;1.7.10 in sbt-chain
@@ -676,7 +676,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.slf4j#jcl-over-slf4j;1.7.10 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.slf4j#slf4j-log4j12;1.7.10 [compile->default(compile)]
 [info] Resolving org.slf4j#slf4j-log4j12;1.7.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@295443a7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@77fa168f
 [debug] sbt-chain: module revision found in cache: org.slf4j#slf4j-log4j12;1.7.10
 [debug] 	local: revision in cache: org.slf4j#slf4j-log4j12;1.7.10
 [debug] 	found org.slf4j#slf4j-log4j12;1.7.10 in sbt-chain
@@ -685,7 +685,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.slf4j#slf4j-log4j12;1.7.10 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.ning#compress-lzf;1.0.0 [compile->default(compile)]
 [info] Resolving com.ning#compress-lzf;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@61e67230
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1c48cda3
 [debug] sbt-chain: module revision found in cache: com.ning#compress-lzf;1.0.0
 [debug] 	local: revision in cache: com.ning#compress-lzf;1.0.0
 [debug] 	found com.ning#compress-lzf;1.0.0 in sbt-chain
@@ -694,7 +694,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.ning#compress-lzf;1.0.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.xerial.snappy#snappy-java;1.1.1.6 [compile->default(compile)]
 [info] Resolving org.xerial.snappy#snappy-java;1.1.1.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78bbd2f6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@381241f4
 [debug] sbt-chain: module revision found in cache: org.xerial.snappy#snappy-java;1.1.1.6
 [debug] 	local: revision in cache: org.xerial.snappy#snappy-java;1.1.1.6
 [debug] 	found org.xerial.snappy#snappy-java;1.1.1.6 in sbt-chain
@@ -703,7 +703,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.xerial.snappy#snappy-java;1.1.1.6 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->net.jpountz.lz4#lz4;1.2.0 [compile->default(compile)]
 [info] Resolving net.jpountz.lz4#lz4;1.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@54d05f5d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1c57576c
 [debug] sbt-chain: module revision found in cache: net.jpountz.lz4#lz4;1.2.0
 [debug] 	local: revision in cache: net.jpountz.lz4#lz4;1.2.0
 [debug] 	found net.jpountz.lz4#lz4;1.2.0 in sbt-chain
@@ -712,7 +712,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->net.jpountz.lz4#lz4;1.2.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.roaringbitmap#RoaringBitmap;0.4.5 [compile->default(compile)]
 [info] Resolving org.roaringbitmap#RoaringBitmap;0.4.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2a4b0e87
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4c3d9782
 [debug] sbt-chain: module revision found in cache: org.roaringbitmap#RoaringBitmap;0.4.5
 [debug] 	local: revision in cache: org.roaringbitmap#RoaringBitmap;0.4.5
 [debug] 	found org.roaringbitmap#RoaringBitmap;0.4.5 in sbt-chain
@@ -721,7 +721,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.roaringbitmap#RoaringBitmap;0.4.5 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-net#commons-net;2.2 [compile->default(compile)]
 [info] Resolving commons-net#commons-net;2.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@41571c42
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@20a4a95d
 [debug] sbt-chain: module revision found in cache: commons-net#commons-net;2.2
 [debug] 	local: revision in cache: commons-net#commons-net;2.2
 [debug] 	found commons-net#commons-net;2.2 in sbt-chain
@@ -730,7 +730,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-net#commons-net;2.2 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.spark-project.akka#akka-remote_2.10;2.3.4-spark [compile->default(compile)]
 [info] Resolving org.spark-project.akka#akka-remote_2.10;2.3.4-spark ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@650d564b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@36963f9e
 [debug] sbt-chain: module revision found in cache: org.spark-project.akka#akka-remote_2.10;2.3.4-spark
 [debug] 	local: revision in cache: org.spark-project.akka#akka-remote_2.10;2.3.4-spark
 [debug] 	found org.spark-project.akka#akka-remote_2.10;2.3.4-spark in sbt-chain
@@ -739,7 +739,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.spark-project.akka#akka-remote_2.10;2.3.4-spark [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.spark-project.akka#akka-actor_2.10;2.3.4-spark [compile->default(compile)]
 [info] Resolving org.spark-project.akka#akka-actor_2.10;2.3.4-spark ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@409fe755
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1de0a3
 [debug] sbt-chain: module revision found in cache: org.spark-project.akka#akka-actor_2.10;2.3.4-spark
 [debug] 	local: revision in cache: org.spark-project.akka#akka-actor_2.10;2.3.4-spark
 [debug] 	found org.spark-project.akka#akka-actor_2.10;2.3.4-spark in sbt-chain
@@ -748,7 +748,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.spark-project.akka#akka-actor_2.10;2.3.4-spark [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.typesafe#config;1.2.1 [compile->default(compile)]
 [info] Resolving com.typesafe#config;1.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1078f92d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@47e6ee6c
 [debug] sbt-chain: module revision found in cache: com.typesafe#config;1.2.1
 [debug] 	local: revision in cache: com.typesafe#config;1.2.1
 [debug] 	found com.typesafe#config;1.2.1 in sbt-chain
@@ -757,7 +757,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.typesafe#config;1.2.1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->io.netty#netty;3.8.0.Final [compile->default(compile)]
 [info] Resolving io.netty#netty;3.8.0.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6abf21fd
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@60c0dc67
 [debug] sbt-chain: module revision found in cache: io.netty#netty;3.8.0.Final
 [debug] 	local: revision in cache: io.netty#netty;3.8.0.Final
 [debug] 	found io.netty#netty;3.8.0.Final in sbt-chain
@@ -766,7 +766,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->io.netty#netty;3.8.0.Final [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.spark-project.protobuf#protobuf-java;2.5.0-spark [compile->default(compile)]
 [info] Resolving org.spark-project.protobuf#protobuf-java;2.5.0-spark ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4c4e2d52
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7c6537e9
 [debug] sbt-chain: module revision found in cache: org.spark-project.protobuf#protobuf-java;2.5.0-spark
 [debug] 	local: revision in cache: org.spark-project.protobuf#protobuf-java;2.5.0-spark
 [debug] 	found org.spark-project.protobuf#protobuf-java;2.5.0-spark in sbt-chain
@@ -775,7 +775,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.spark-project.protobuf#protobuf-java;2.5.0-spark [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.uncommons.maths#uncommons-maths;1.2.2a [compile->default(compile)]
 [info] Resolving org.uncommons.maths#uncommons-maths;1.2.2a ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@e630519
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@513a38ee
 [debug] sbt-chain: module revision found in cache: org.uncommons.maths#uncommons-maths;1.2.2a
 [debug] 	local: revision in cache: org.uncommons.maths#uncommons-maths;1.2.2a
 [debug] 	found org.uncommons.maths#uncommons-maths;1.2.2a in sbt-chain
@@ -784,7 +784,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.spark-project.akka#akka-slf4j_2.10;2.3.4-spark [compile->default(compile)]
 [info] Resolving org.spark-project.akka#akka-slf4j_2.10;2.3.4-spark ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@233dab2b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@50a2de39
 [debug] sbt-chain: module revision found in cache: org.spark-project.akka#akka-slf4j_2.10;2.3.4-spark
 [debug] 	local: revision in cache: org.spark-project.akka#akka-slf4j_2.10;2.3.4-spark
 [debug] 	found org.spark-project.akka#akka-slf4j_2.10;2.3.4-spark in sbt-chain
@@ -793,7 +793,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.spark-project.akka#akka-slf4j_2.10;2.3.4-spark [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.json4s#json4s-jackson_2.10;3.2.10 [compile->default(compile)]
 [info] Resolving org.json4s#json4s-jackson_2.10;3.2.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@64e8b3cd
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@68fbdbd5
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-jackson_2.10;3.2.10
 [debug] 	local: revision in cache: org.json4s#json4s-jackson_2.10;3.2.10
 [debug] 	found org.json4s#json4s-jackson_2.10;3.2.10 in sbt-chain
@@ -802,7 +802,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.json4s#json4s-jackson_2.10;3.2.10 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.json4s#json4s-core_2.10;3.2.10 [compile->default(compile)]
 [info] Resolving org.json4s#json4s-core_2.10;3.2.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6bad3307
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5b85d019
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-core_2.10;3.2.10
 [debug] 	local: revision in cache: org.json4s#json4s-core_2.10;3.2.10
 [debug] 	found org.json4s#json4s-core_2.10;3.2.10 in sbt-chain
@@ -811,7 +811,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.json4s#json4s-core_2.10;3.2.10 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.json4s#json4s-ast_2.10;3.2.10 [compile->default(compile)]
 [info] Resolving org.json4s#json4s-ast_2.10;3.2.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@26b3a1cd
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@65d0e518
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-ast_2.10;3.2.10
 [debug] 	local: revision in cache: org.json4s#json4s-ast_2.10;3.2.10
 [debug] 	found org.json4s#json4s-ast_2.10;3.2.10 in sbt-chain
@@ -820,7 +820,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.json4s#json4s-ast_2.10;3.2.10 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.thoughtworks.paranamer#paranamer;2.6 [compile->default(compile)]
 [info] Resolving com.thoughtworks.paranamer#paranamer;2.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1cc4f29b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@13306fa5
 [debug] sbt-chain: module revision found in cache: com.thoughtworks.paranamer#paranamer;2.6
 [debug] 	local: revision in cache: com.thoughtworks.paranamer#paranamer;2.6
 [debug] 	found com.thoughtworks.paranamer#paranamer;2.6 in sbt-chain
@@ -829,7 +829,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.thoughtworks.paranamer#paranamer;2.6 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.scala-lang#scalap;2.10.0 [compile->default(compile)]
 [info] Resolving org.scala-lang#scalap;2.10.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@559cbcd6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@64beb55c
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scalap;2.10.0
 [debug] 	local: revision in cache: org.scala-lang#scalap;2.10.0
 [debug] 	found org.scala-lang#scalap;2.10.0 in sbt-chain
@@ -838,7 +838,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.scala-lang#scalap;2.10.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.mesos#mesos;0.21.0 [compile->default(compile)]
 [info] Resolving org.apache.mesos#mesos;0.21.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d6dd67f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@23db7615
 [debug] sbt-chain: module revision found in cache: org.apache.mesos#mesos;0.21.0
 [debug] 	local: revision in cache: org.apache.mesos#mesos;0.21.0
 [debug] 	found org.apache.mesos#mesos;0.21.0 in sbt-chain
@@ -847,7 +847,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.mesos#mesos;0.21.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.clearspring.analytics#stream;2.7.0 [compile->default(compile)]
 [info] Resolving com.clearspring.analytics#stream;2.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@68736aa8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d791879
 [debug] sbt-chain: module revision found in cache: com.clearspring.analytics#stream;2.7.0
 [debug] 	local: revision in cache: com.clearspring.analytics#stream;2.7.0
 [debug] 	found com.clearspring.analytics#stream;2.7.0 in sbt-chain
@@ -856,7 +856,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.clearspring.analytics#stream;2.7.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->io.dropwizard.metrics#metrics-core;3.1.0 [compile->default(compile)]
 [info] Resolving io.dropwizard.metrics#metrics-core;3.1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7300ab41
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6c282239
 [debug] sbt-chain: module revision found in cache: io.dropwizard.metrics#metrics-core;3.1.0
 [debug] 	local: revision in cache: io.dropwizard.metrics#metrics-core;3.1.0
 [debug] 	found io.dropwizard.metrics#metrics-core;3.1.0 in sbt-chain
@@ -865,7 +865,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->io.dropwizard.metrics#metrics-core;3.1.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->io.dropwizard.metrics#metrics-jvm;3.1.0 [compile->default(compile)]
 [info] Resolving io.dropwizard.metrics#metrics-jvm;3.1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@65aa2b4b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4139d8ce
 [debug] sbt-chain: module revision found in cache: io.dropwizard.metrics#metrics-jvm;3.1.0
 [debug] 	local: revision in cache: io.dropwizard.metrics#metrics-jvm;3.1.0
 [debug] 	found io.dropwizard.metrics#metrics-jvm;3.1.0 in sbt-chain
@@ -874,7 +874,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->io.dropwizard.metrics#metrics-jvm;3.1.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->io.dropwizard.metrics#metrics-json;3.1.0 [compile->default(compile)]
 [info] Resolving io.dropwizard.metrics#metrics-json;3.1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@46fc6a02
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52c0e057
 [debug] sbt-chain: module revision found in cache: io.dropwizard.metrics#metrics-json;3.1.0
 [debug] 	local: revision in cache: io.dropwizard.metrics#metrics-json;3.1.0
 [debug] 	found io.dropwizard.metrics#metrics-json;3.1.0 in sbt-chain
@@ -883,7 +883,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->io.dropwizard.metrics#metrics-json;3.1.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->io.dropwizard.metrics#metrics-graphite;3.1.0 [compile->default(compile)]
 [info] Resolving io.dropwizard.metrics#metrics-graphite;3.1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@96645b5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@77b8f3b
 [debug] sbt-chain: module revision found in cache: io.dropwizard.metrics#metrics-graphite;3.1.0
 [debug] 	local: revision in cache: io.dropwizard.metrics#metrics-graphite;3.1.0
 [debug] 	found io.dropwizard.metrics#metrics-graphite;3.1.0 in sbt-chain
@@ -892,7 +892,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->io.dropwizard.metrics#metrics-graphite;3.1.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.fasterxml.jackson.core#jackson-databind;2.4.4 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-databind;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@442d691f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@375cbb77
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-databind;2.4.4
 [debug] 	local: revision in cache: com.fasterxml.jackson.core#jackson-databind;2.4.4
 [debug] 	found com.fasterxml.jackson.core#jackson-databind;2.4.4 in sbt-chain
@@ -901,7 +901,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.fasterxml.jackson.core#jackson-databind;2.4.4 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.fasterxml.jackson.core#jackson-core;2.4.4 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-core;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5220ebe3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c8f5954
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-core;2.4.4
 [debug] 	local: revision in cache: com.fasterxml.jackson.core#jackson-core;2.4.4
 [debug] 	found com.fasterxml.jackson.core#jackson-core;2.4.4 in sbt-chain
@@ -910,7 +910,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.fasterxml.jackson.core#jackson-core;2.4.4 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.fasterxml.jackson.module#jackson-module-scala_2.10;2.4.4 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.module#jackson-module-scala_2.10;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7e357f1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@df230c3
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.module#jackson-module-scala_2.10;2.4.4
 [debug] 	local: revision in cache: com.fasterxml.jackson.module#jackson-module-scala_2.10;2.4.4
 [debug] 	found com.fasterxml.jackson.module#jackson-module-scala_2.10;2.4.4 in sbt-chain
@@ -919,7 +919,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.fasterxml.jackson.module#jackson-module-scala_2.10;2.4.4 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.scala-lang#scala-reflect;2.10.4 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-reflect;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6726b45d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6565704a
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.10.4
 [debug] 	local: revision in cache: org.scala-lang#scala-reflect;2.10.4
 [debug] 	found org.scala-lang#scala-reflect;2.10.4 in sbt-chain
@@ -929,7 +929,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.scala-lang#scala-reflect;2.10.4 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.fasterxml.jackson.core#jackson-annotations;2.4.4 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-annotations;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7dcc8ed4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@39f29204
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-annotations;2.4.4
 [debug] 	local: revision in cache: com.fasterxml.jackson.core#jackson-annotations;2.4.4
 [debug] 	found com.fasterxml.jackson.core#jackson-annotations;2.4.4 in sbt-chain
@@ -938,7 +938,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.fasterxml.jackson.core#jackson-annotations;2.4.4 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.ivy#ivy;2.4.0 [compile->default(compile)]
 [info] Resolving org.apache.ivy#ivy;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@813becd
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7e561f51
 [debug] sbt-chain: module revision found in cache: org.apache.ivy#ivy;2.4.0
 [debug] 	local: revision in cache: org.apache.ivy#ivy;2.4.0
 [debug] 	found org.apache.ivy#ivy;2.4.0 in sbt-chain
@@ -947,7 +947,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.ivy#ivy;2.4.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->oro#oro;2.0.8 [compile->default(compile)]
 [info] Resolving oro#oro;2.0.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@31802860
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@53debf97
 [debug] sbt-chain: module revision found in cache: oro#oro;2.0.8
 [debug] 	local: revision in cache: oro#oro;2.0.8
 [debug] 	found oro#oro;2.0.8 in sbt-chain
@@ -956,7 +956,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->oro#oro;2.0.8 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.tachyonproject#tachyon-client;0.5.0 [compile->default(compile)]
 [info] Resolving org.tachyonproject#tachyon-client;0.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5018ca4a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e1c4193
 [debug] sbt-chain: module revision found in cache: org.tachyonproject#tachyon-client;0.5.0
 [debug] 	local: revision in cache: org.tachyonproject#tachyon-client;0.5.0
 [debug] 	found org.tachyonproject#tachyon-client;0.5.0 in sbt-chain
@@ -965,7 +965,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.tachyonproject#tachyon-client;0.5.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.tachyonproject#tachyon;0.5.0 [compile->default(compile)]
 [info] Resolving org.tachyonproject#tachyon;0.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@41782181
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1b7130c
 [debug] sbt-chain: module revision found in cache: org.tachyonproject#tachyon;0.5.0
 [debug] 	local: revision in cache: org.tachyonproject#tachyon;0.5.0
 [debug] 	found org.tachyonproject#tachyon;0.5.0 in sbt-chain
@@ -974,7 +974,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.tachyonproject#tachyon;0.5.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-io#commons-io;2.4 [compile->default(compile)]
 [info] Resolving commons-io#commons-io;2.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5a9361da
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4b1402a3
 [debug] sbt-chain: module revision found in cache: commons-io#commons-io;2.4
 [debug] 	local: revision in cache: commons-io#commons-io;2.4
 [debug] 	found commons-io#commons-io;2.4 in sbt-chain
@@ -983,7 +983,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-io#commons-io;2.4 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.spark-project#pyrolite;2.0.1 [compile->default(compile)]
 [info] Resolving org.spark-project#pyrolite;2.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7b61902a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@720857b4
 [debug] sbt-chain: module revision found in cache: org.spark-project#pyrolite;2.0.1
 [debug] 	local: revision in cache: org.spark-project#pyrolite;2.0.1
 [debug] 	found org.spark-project#pyrolite;2.0.1 in sbt-chain
@@ -992,7 +992,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.spark-project#pyrolite;2.0.1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->net.sf.py4j#py4j;0.8.2.1 [compile->default(compile)]
 [info] Resolving net.sf.py4j#py4j;0.8.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4608d2f3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@72e9083a
 [debug] sbt-chain: module revision found in cache: net.sf.py4j#py4j;0.8.2.1
 [debug] 	local: revision in cache: net.sf.py4j#py4j;0.8.2.1
 [debug] 	found net.sf.py4j#py4j;0.8.2.1 in sbt-chain
@@ -1001,7 +1001,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->net.sf.py4j#py4j;0.8.2.1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@645d62a6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@79189be
 [debug] 		tried C:\Users\Daniel\.ivy2\local\org.apache.hadoop\hadoop-yarn-server-nodemanager\2.2.0\ivys\ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0
 [debug] 		tried http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom
@@ -1011,7 +1011,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0!hadoop-yarn-server-nodemanager.pom(pom.original) (427ms)
+[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0!hadoop-yarn-server-nodemanager.pom(pom.original) (410ms)
 [info] Resolving org.apache.hadoop#hadoop-yarn-server;2.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-yarn-server;2.2.0 {}
 [debug] 		tried C:\Users\Daniel\.ivy2\local\org.apache.hadoop\hadoop-yarn-server\2.2.0\ivys\ivy.xml
@@ -1023,7 +1023,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server/2.2.0/hadoop-yarn-server-2.2.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server/2.2.0/hadoop-yarn-server-2.2.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server/2.2.0/hadoop-yarn-server-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server;2.2.0!hadoop-yarn-server.pom(pom.original) (412ms)
+[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server;2.2.0!hadoop-yarn-server.pom(pom.original) (390ms)
 [info] Resolving org.apache.hadoop#hadoop-yarn;2.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-yarn;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn;2.2.0
@@ -1037,7 +1037,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.spark#spark-streaming_2.10;1.3.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-streaming_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1bd1bc3d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1351b5d0
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-streaming_2.10;1.3.0
 [debug] 	local: revision in cache: org.apache.spark#spark-streaming_2.10;1.3.0
 [debug] 	found org.apache.spark#spark-streaming_2.10;1.3.0 in sbt-chain
@@ -1046,7 +1046,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.spark#spark-streaming_2.10;1.3.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.spark#spark-sql_2.10;1.3.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-sql_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@50dbae25
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2805e18c
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-sql_2.10;1.3.0
 [debug] 	local: revision in cache: org.apache.spark#spark-sql_2.10;1.3.0
 [debug] 	found org.apache.spark#spark-sql_2.10;1.3.0 in sbt-chain
@@ -1055,7 +1055,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.spark#spark-sql_2.10;1.3.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.spark#spark-catalyst_2.10;1.3.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-catalyst_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@660e24d7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78341cf1
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-catalyst_2.10;1.3.0
 [debug] 	local: revision in cache: org.apache.spark#spark-catalyst_2.10;1.3.0
 [debug] 	found org.apache.spark#spark-catalyst_2.10;1.3.0 in sbt-chain
@@ -1064,7 +1064,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.spark#spark-catalyst_2.10;1.3.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.scala-lang#scala-compiler;2.10.4 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-compiler;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@47f3643a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@37020f77
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.10.4
 [debug] 	local: revision in cache: org.scala-lang#scala-compiler;2.10.4
 [debug] 	found org.scala-lang#scala-compiler;2.10.4 in sbt-chain
@@ -1073,7 +1073,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.scala-lang#scala-compiler;2.10.4 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->default(compile)]
 [info] Resolving org.scalamacros#quasiquotes_2.10;2.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3d2d05d3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@481d25b9
 [debug] sbt-chain: module revision found in cache: org.scalamacros#quasiquotes_2.10;2.0.1
 [debug] 	local: revision in cache: org.scalamacros#quasiquotes_2.10;2.0.1
 [debug] 	found org.scalamacros#quasiquotes_2.10;2.0.1 in sbt-chain
@@ -1082,7 +1082,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.twitter#parquet-column;1.6.0rc3 [compile->default(compile)]
 [info] Resolving com.twitter#parquet-column;1.6.0rc3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e0db9a3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2142f550
 [debug] sbt-chain: module revision found in cache: com.twitter#parquet-column;1.6.0rc3
 [debug] 	local: revision in cache: com.twitter#parquet-column;1.6.0rc3
 [debug] 	found com.twitter#parquet-column;1.6.0rc3 in sbt-chain
@@ -1091,7 +1091,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.twitter#parquet-column;1.6.0rc3 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.twitter#parquet-common;1.6.0rc3 [compile->default(compile)]
 [info] Resolving com.twitter#parquet-common;1.6.0rc3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6f161c04
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@32962c0f
 [debug] sbt-chain: module revision found in cache: com.twitter#parquet-common;1.6.0rc3
 [debug] 	local: revision in cache: com.twitter#parquet-common;1.6.0rc3
 [debug] 	found com.twitter#parquet-common;1.6.0rc3 in sbt-chain
@@ -1100,7 +1100,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.twitter#parquet-common;1.6.0rc3 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.twitter#parquet-encoding;1.6.0rc3 [compile->default(compile)]
 [info] Resolving com.twitter#parquet-encoding;1.6.0rc3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@22599388
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@61ba3a32
 [debug] sbt-chain: module revision found in cache: com.twitter#parquet-encoding;1.6.0rc3
 [debug] 	local: revision in cache: com.twitter#parquet-encoding;1.6.0rc3
 [debug] 	found com.twitter#parquet-encoding;1.6.0rc3 in sbt-chain
@@ -1109,7 +1109,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.twitter#parquet-encoding;1.6.0rc3 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.twitter#parquet-generator;1.6.0rc3 [compile->default(compile)]
 [info] Resolving com.twitter#parquet-generator;1.6.0rc3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@647d8415
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@76925bfb
 [debug] sbt-chain: module revision found in cache: com.twitter#parquet-generator;1.6.0rc3
 [debug] 	local: revision in cache: com.twitter#parquet-generator;1.6.0rc3
 [debug] 	found com.twitter#parquet-generator;1.6.0rc3 in sbt-chain
@@ -1118,7 +1118,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.twitter#parquet-generator;1.6.0rc3 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-codec#commons-codec;1.5 [compile->default(compile)]
 [info] Resolving commons-codec#commons-codec;1.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1f0ebaa
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7407835
 [debug] sbt-chain: module revision found in cache: commons-codec#commons-codec;1.5
 [debug] 	local: revision in cache: commons-codec#commons-codec;1.5
 [debug] 	found commons-codec#commons-codec;1.5 in sbt-chain
@@ -1127,7 +1127,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-codec#commons-codec;1.5 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.twitter#parquet-hadoop;1.6.0rc3 [compile->default(compile)]
 [info] Resolving com.twitter#parquet-hadoop;1.6.0rc3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@13a80c2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@38df1f55
 [debug] sbt-chain: module revision found in cache: com.twitter#parquet-hadoop;1.6.0rc3
 [debug] 	local: revision in cache: com.twitter#parquet-hadoop;1.6.0rc3
 [debug] 	found com.twitter#parquet-hadoop;1.6.0rc3 in sbt-chain
@@ -1136,7 +1136,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.twitter#parquet-hadoop;1.6.0rc3 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.twitter#parquet-format;2.2.0-rc1 [compile->default(compile)]
 [info] Resolving com.twitter#parquet-format;2.2.0-rc1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@476acbb7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78fc1757
 [debug] sbt-chain: module revision found in cache: com.twitter#parquet-format;2.2.0-rc1
 [debug] 	local: revision in cache: com.twitter#parquet-format;2.2.0-rc1
 [debug] 	found com.twitter#parquet-format;2.2.0-rc1 in sbt-chain
@@ -1145,7 +1145,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.twitter#parquet-format;2.2.0-rc1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.twitter#parquet-jackson;1.6.0rc3 [compile->default(compile)]
 [info] Resolving com.twitter#parquet-jackson;1.6.0rc3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@14bc8b4e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@991f026
 [debug] sbt-chain: module revision found in cache: com.twitter#parquet-jackson;1.6.0rc3
 [debug] 	local: revision in cache: com.twitter#parquet-jackson;1.6.0rc3
 [debug] 	found com.twitter#parquet-jackson;1.6.0rc3 in sbt-chain
@@ -1154,7 +1154,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.twitter#parquet-jackson;1.6.0rc3 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.codehaus.jackson#jackson-mapper-asl;1.9.11 [compile->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-mapper-asl;1.9.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6313911d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6c3f928f
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-mapper-asl;1.9.11
 [debug] 	local: revision in cache: org.codehaus.jackson#jackson-mapper-asl;1.9.11
 [debug] 	found org.codehaus.jackson#jackson-mapper-asl;1.9.11 in sbt-chain
@@ -1163,7 +1163,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.codehaus.jackson#jackson-mapper-asl;1.9.11 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.codehaus.jackson#jackson-core-asl;1.9.11 [compile->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-core-asl;1.9.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5aea5fa6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@76d65eaa
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-core-asl;1.9.11
 [debug] 	local: revision in cache: org.codehaus.jackson#jackson-core-asl;1.9.11
 [debug] 	found org.codehaus.jackson#jackson-core-asl;1.9.11 in sbt-chain
@@ -1172,7 +1172,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.codehaus.jackson#jackson-core-asl;1.9.11 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.jodd#jodd-core;3.6.3 [compile->default(compile)]
 [info] Resolving org.jodd#jodd-core;3.6.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@69780ce0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@29d48e8c
 [debug] sbt-chain: module revision found in cache: org.jodd#jodd-core;3.6.3
 [debug] 	local: revision in cache: org.jodd#jodd-core;3.6.3
 [debug] 	found org.jodd#jodd-core;3.6.3 in sbt-chain
@@ -1181,7 +1181,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.jodd#jodd-core;3.6.3 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.3.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-graphx_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@449e759
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7039ff5d
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-graphx_2.10;1.3.0
 [debug] 	local: revision in cache: org.apache.spark#spark-graphx_2.10;1.3.0
 [debug] 	found org.apache.spark#spark-graphx_2.10;1.3.0 in sbt-chain
@@ -1190,7 +1190,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.apache.spark#spark-graphx_2.10;1.3.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.jblas#jblas;1.2.3 [compile->default(compile)]
 [info] Resolving org.jblas#jblas;1.2.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@44fe4b0b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@546f71a3
 [debug] sbt-chain: module revision found in cache: org.jblas#jblas;1.2.3
 [debug] 	local: revision in cache: org.jblas#jblas;1.2.3
 [debug] 	found org.jblas#jblas;1.2.3 in sbt-chain
@@ -1199,7 +1199,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.jblas#jblas;1.2.3 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.scalanlp#breeze_2.10;0.11.1 [compile->default(compile)]
 [info] Resolving org.scalanlp#breeze_2.10;0.11.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@25bbaaa3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7fe5fedd
 [debug] sbt-chain: module revision found in cache: org.scalanlp#breeze_2.10;0.11.1
 [debug] 	local: revision in cache: org.scalanlp#breeze_2.10;0.11.1
 [debug] 	found org.scalanlp#breeze_2.10;0.11.1 in sbt-chain
@@ -1208,7 +1208,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.scalanlp#breeze_2.10;0.11.1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.scalanlp#breeze-macros_2.10;0.11.1 [compile->default(compile)]
 [info] Resolving org.scalanlp#breeze-macros_2.10;0.11.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6f032147
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6f71b8ea
 [debug] sbt-chain: module revision found in cache: org.scalanlp#breeze-macros_2.10;0.11.1
 [debug] 	local: revision in cache: org.scalanlp#breeze-macros_2.10;0.11.1
 [debug] 	found org.scalanlp#breeze-macros_2.10;0.11.1 in sbt-chain
@@ -1217,7 +1217,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.scalanlp#breeze-macros_2.10;0.11.1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.github.fommil.netlib#core;1.1.2 [compile->default(compile)]
 [info] Resolving com.github.fommil.netlib#core;1.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@390f3445
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5b5b6be9
 [debug] sbt-chain: module revision found in cache: com.github.fommil.netlib#core;1.1.2
 [debug] 	local: revision in cache: com.github.fommil.netlib#core;1.1.2
 [debug] 	found com.github.fommil.netlib#core;1.1.2 in sbt-chain
@@ -1226,7 +1226,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.github.fommil.netlib#core;1.1.2 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->default(compile)]
 [info] Resolving net.sourceforge.f2j#arpack_combined_all;0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3d0900d1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4f44ac05
 [debug] sbt-chain: module revision found in cache: net.sourceforge.f2j#arpack_combined_all;0.1
 [debug] 	local: revision in cache: net.sourceforge.f2j#arpack_combined_all;0.1
 [debug] 	found net.sourceforge.f2j#arpack_combined_all;0.1 in sbt-chain
@@ -1235,7 +1235,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->net.sf.opencsv#opencsv;2.3 [compile->default(compile)]
 [info] Resolving net.sf.opencsv#opencsv;2.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@77647066
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@77c8fc4c
 [debug] sbt-chain: module revision found in cache: net.sf.opencsv#opencsv;2.3
 [debug] 	local: revision in cache: net.sf.opencsv#opencsv;2.3
 [debug] 	found net.sf.opencsv#opencsv;2.3 in sbt-chain
@@ -1244,7 +1244,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->net.sf.opencsv#opencsv;2.3 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.github.rwl#jtransforms;2.4.0 [compile->default(compile)]
 [info] Resolving com.github.rwl#jtransforms;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4ac75d88
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4e03c1d4
 [debug] sbt-chain: module revision found in cache: com.github.rwl#jtransforms;2.4.0
 [debug] 	local: revision in cache: com.github.rwl#jtransforms;2.4.0
 [debug] 	found com.github.rwl#jtransforms;2.4.0 in sbt-chain
@@ -1253,7 +1253,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->com.github.rwl#jtransforms;2.4.0 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.spire-math#spire_2.10;0.7.4 [compile->default(compile)]
 [info] Resolving org.spire-math#spire_2.10;0.7.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7d01aea7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1963a59f
 [debug] sbt-chain: module revision found in cache: org.spire-math#spire_2.10;0.7.4
 [debug] 	local: revision in cache: org.spire-math#spire_2.10;0.7.4
 [debug] 	found org.spire-math#spire_2.10;0.7.4 in sbt-chain
@@ -1262,7 +1262,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.spire-math#spire_2.10;0.7.4 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.spire-math#spire-macros_2.10;0.7.4 [compile->default(compile)]
 [info] Resolving org.spire-math#spire-macros_2.10;0.7.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@b57c258
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@666814e1
 [debug] sbt-chain: module revision found in cache: org.spire-math#spire-macros_2.10;0.7.4
 [debug] 	local: revision in cache: org.spire-math#spire-macros_2.10;0.7.4
 [debug] 	found org.spire-math#spire-macros_2.10;0.7.4 in sbt-chain
@@ -1271,7 +1271,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.spire-math#spire-macros_2.10;0.7.4 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->javax.mail#javax.mail-api;1.4.7 [compile->default(compile)]
 [info] Resolving javax.mail#javax.mail-api;1.4.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3aca5c23
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4988d124
 [debug] sbt-chain: module revision found in cache: javax.mail#javax.mail-api;1.4.7
 [debug] 	local: revision in cache: javax.mail#javax.mail-api;1.4.7
 [debug] 	found javax.mail#javax.mail-api;1.4.7 in sbt-chain
@@ -1280,7 +1280,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->javax.mail#javax.mail-api;1.4.7 [compile->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->javax.mail#mail;1.4.7 [compile->default(compile)]
 [info] Resolving javax.mail#mail;1.4.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3674bf03
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@46b5695a
 [debug] sbt-chain: module revision found in cache: javax.mail#mail;1.4.7
 [debug] 	local: revision in cache: javax.mail#mail;1.4.7
 [debug] 	found javax.mail#mail;1.4.7 in sbt-chain
@@ -2357,7 +2357,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->javax.mail#mail;1.4.7 [runtime->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-net#commons-net;3.1 [runtime->default(compile)]
 [info] Resolving commons-net#commons-net;3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1c54ea2f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@695c229e
 [debug] sbt-chain: module revision found in cache: commons-net#commons-net;3.1
 [debug] 	local: revision in cache: commons-net#commons-net;3.1
 [debug] 	found commons-net#commons-net;3.1 in sbt-chain
@@ -3979,7 +3979,7 @@
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->commons-net#commons-net;3.1 [test->master]
 [debug] == resolving dependencies model-builder#model-builder$sources_javadoc_2.10;1.0->org.scalatest#scalatest_2.10;2.0 [test->default(compile)]
 [info] Resolving org.scalatest#scalatest_2.10;2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@428cb483
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3acebb20
 [debug] sbt-chain: module revision found in cache: org.scalatest#scalatest_2.10;2.0
 [debug] 	local: revision in cache: org.scalatest#scalatest_2.10;2.0
 [debug] 	found org.scalatest#scalatest_2.10;2.0 in sbt-chain
@@ -10488,8 +10488,8 @@
 [debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-json;3.1.0!metrics-json.jar(src)
 [debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-json;3.1.0!metrics-json.jar
 [debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-graphite;3.1.0!metrics-graphite.jar(doc)
-[debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-graphite;3.1.0!metrics-graphite.jar
 [debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-graphite;3.1.0!metrics-graphite.jar(src)
+[debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-graphite;3.1.0!metrics-graphite.jar
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-databind;2.4.4!jackson-databind.jar(src)
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-databind;2.4.4!jackson-databind.jar
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-databind;2.4.4!jackson-databind.jar(doc)
@@ -10624,7 +10624,7 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar(doc)
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar(doc)
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar(src)
-[debug] :: resolution report :: resolve 16279ms :: artifacts dl 446ms
+[debug] :: resolution report :: resolve 24214ms :: artifacts dl 524ms
 [debug] 	report for model-builder#model-builder$sources_javadoc_2.10;1.0 compile produced in C:\Users\Daniel\Documents\1 current projects\Bachelorcode\ModelBuilder\target\resolution-cache\reports\model-builder-model-builder$sources_javadoc_2.10-compile.xml
 [debug] 	report for model-builder#model-builder$sources_javadoc_2.10;1.0 runtime produced in C:\Users\Daniel\Documents\1 current projects\Bachelorcode\ModelBuilder\target\resolution-cache\reports\model-builder-model-builder$sources_javadoc_2.10-runtime.xml
 [debug] 	report for model-builder#model-builder$sources_javadoc_2.10;1.0 test produced in C:\Users\Daniel\Documents\1 current projects\Bachelorcode\ModelBuilder\target\resolution-cache\reports\model-builder-model-builder$sources_javadoc_2.10-test.xml
@@ -10638,4 +10638,4 @@
 [debug] 	report for model-builder#model-builder$sources_javadoc_2.10;1.0 docs produced in C:\Users\Daniel\Documents\1 current projects\Bachelorcode\ModelBuilder\target\resolution-cache\reports\model-builder-model-builder$sources_javadoc_2.10-docs.xml
 [debug] 	report for model-builder#model-builder$sources_javadoc_2.10;1.0 pom produced in C:\Users\Daniel\Documents\1 current projects\Bachelorcode\ModelBuilder\target\resolution-cache\reports\model-builder-model-builder$sources_javadoc_2.10-pom.xml
 [debug] 	report for model-builder#model-builder$sources_javadoc_2.10;1.0 scala-tool produced in C:\Users\Daniel\Documents\1 current projects\Bachelorcode\ModelBuilder\target\resolution-cache\reports\model-builder-model-builder$sources_javadoc_2.10-scala-tool.xml
-[debug] 	resolve done (16279ms resolve - 446ms download)
+[debug] 	resolve done (24214ms resolve - 524ms download)
