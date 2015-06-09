@@ -54,7 +54,7 @@ object MailService {
           if (msg.getContent.isInstanceOf[Multipart]) {
             val multiPartMessage = msg.getContent.asInstanceOf[Multipart]
             for (i <- 0 to multiPartMessage.getCount - 1) {
-              if (multiPartMessage.getBodyPart(i).isMimeType("text/*")) {
+              if (multiPartMessage.getBodyPart(i).isMimeType("text/plain")) {
                 rawText = multiPartMessage.getBodyPart(i).getContent.asInstanceOf[String]
               }
             }
