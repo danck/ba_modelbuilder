@@ -24,8 +24,6 @@ package de.haw.bachelorthesis.dkirchner
 import java.io.UnsupportedEncodingException
 import javax.mail._
 
-import com.sun.mail.util.BASE64DecoderStream
-
 /**
  * Created by Daniel on 25.05.2015.
  */
@@ -49,21 +47,18 @@ object MailService {
 
       // iterate over every retrieved message to extract and concatenate message bodies
       messages.foreach(msg => {
-        println("#######" + msg.getSubject)
+        println("#######"+ msg.getSubject)
         rawText = ""
         try {
 
           // iterate over parts of multipart messages and extract text
-          println("\t"+msg.getContent.getClass)
+          println("\n########" + msg.getSubject)
           if (msg.getContent.isInstanceOf[Multipart]) {
             val multiPartMessage = msg.getContent.asInstanceOf[Multipart]
             for (i <- 0 to multiPartMessage.getCount - 1) {
-              println("\t\t text/plain: "+multiPartMessage.getBodyPart(i).isMimeType("text/plain"))
-              println("\t\t text/html: "+multiPartMessage.getBodyPart(i).isMimeType("text/html"))
-              println("\t\t getContentType: "+multiPartMessage.getBodyPart(i).getContentType)
-              if (i==0) println("\t\t as String: "+multiPartMessage.getBodyPart(i).getContent.asInstanceOf[String])
-
-              if (multiPartMessage.getBodyPart(i).isMimeType("text/plain")) {
+              println("\t" + i + " - getContentType: " + multiPartMessage.getBodyPart(i).getContentType)
+              println("\t" + i + " - getContent: " + multiPartMessage.getBodyPart(i).getContent.toString)
+              if (multiPartMessage.getBodyPart(i).getContent.isInstanceOf[String]) {
                 rawText = multiPartMessage.getBodyPart(i).getContent.asInstanceOf[String]
               }
             }
