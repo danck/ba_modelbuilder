@@ -47,6 +47,7 @@ object MailService {
 
       // iterate over every retrieved message to extract and concatenate message bodies
       messages.foreach(msg => {
+        println("#######" + msg.getSubject)
         rawText = ""
         try {
 
@@ -69,6 +70,7 @@ object MailService {
           // this also performs basic filtering an normalization on the text
           if (rawText != "") {
             val bodyString = rawText
+            println(rawText)
             val bodyLines = bodyString.split('\n')
               .filter(line => !line.trim.startsWith(">")) // remove quoted lines
               .filter(line => !line.trim.startsWith("<")) // remove tagged lines (html)
