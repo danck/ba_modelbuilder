@@ -24,6 +24,8 @@ package de.haw.bachelorthesis.dkirchner
 import java.io.UnsupportedEncodingException
 import javax.mail._
 
+import com.sun.mail.util.BASE64DecoderStream
+
 /**
  * Created by Daniel on 25.05.2015.
  */
@@ -56,8 +58,8 @@ object MailService {
           if (msg.getContent.isInstanceOf[Multipart]) {
             val multiPartMessage = msg.getContent.asInstanceOf[Multipart]
             for (i <- 0 to multiPartMessage.getCount - 1) {
-              println("\t\t"+multiPartMessage.getBodyPart(i).getContent.getClass)
-              if (multiPartMessage.getBodyPart(i).getContent.isInstanceOf[String]) {
+              println("\t\t text/plain: "+multiPartMessage.getBodyPart(i).isMimeType("text/plain"))
+              if (multiPartMessage.getBodyPart(i).isMimeType("text/plain")) {
                 rawText = multiPartMessage.getBodyPart(i).getContent.asInstanceOf[String]
               }
             }
