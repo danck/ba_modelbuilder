@@ -137,9 +137,11 @@
       <file leaf-file-name="HDFSService.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/HDFSService.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56225425">
-              <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
-              <folding />
+            <state vertical-scroll-proportion="0.6920052">
+              <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+              <folding>
+                <element signature="e#41#109#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -724,7 +726,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
-          <folding />
+          <folding>
+            <element signature="e#41#109#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -782,7 +786,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="61" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
-          <folding />
+          <folding>
+            <element signature="e#41#109#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -832,7 +838,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="61" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
-          <folding />
+          <folding>
+            <element signature="e#41#109#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -882,7 +890,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#41#109#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1116,9 +1126,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/de/haw/bachelorthesis/dkirchner/HDFSService.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56225425">
-          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
-          <folding />
+        <state vertical-scroll-proportion="0.6920052">
+          <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+          <folding>
+            <element signature="e#41#109#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

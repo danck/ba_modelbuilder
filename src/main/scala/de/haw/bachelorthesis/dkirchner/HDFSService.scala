@@ -3,6 +3,7 @@ package de.haw.bachelorthesis.dkirchner
 import java.io.{BufferedOutputStream, FileWriter, IOException, File}
 import java.util.Calendar
 
+import org.apache.hadoop.io.Text
 import org.apache.hadoop.conf.Configuration
 import org.apache.hadoop.fs.{FileSystem, Path}
 
@@ -60,7 +61,8 @@ object HDFSService {
       }
       println("Appending string of length " + content.length)
       val outStream = hdfs.append(path)
-      outStream.writeChars(content)
+      val wrappedContent = new Text(content)
+      wrappedContent.write(outStream)
       outStream.flush()
       outStream.close()
     } catch {
