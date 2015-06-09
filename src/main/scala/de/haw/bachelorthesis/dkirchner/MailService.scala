@@ -81,7 +81,7 @@ object MailService {
 
             counter += 1
             //println( counter.toString + "\t:" + msg.getSubject )
-            println("##### Appending #####\n" + cleanText)
+            println("##### Appending #####\n")
             messageTexts.append(cleanText + "\n")
           }
         } catch {
@@ -98,6 +98,7 @@ object MailService {
     } finally {
       store.close()
     }
-    messageTexts.toString()
+    println(messageTexts.toString())
+    return messageTexts.toString()
   }
 }
