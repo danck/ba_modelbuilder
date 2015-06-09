@@ -61,7 +61,7 @@ object MailService {
               println("\t\t text/plain: "+multiPartMessage.getBodyPart(i).isMimeType("text/plain"))
               println("\t\t text/html: "+multiPartMessage.getBodyPart(i).isMimeType("text/html"))
               println("\t\t getContentType: "+multiPartMessage.getBodyPart(i).getContentType)
-              if (i==0) println("\t\t as String: "+multiPartMessage.getBodyPart(i).asInstanceOf[String])
+              if (i==0) println("\t\t as String: "+multiPartMessage.getBodyPart(i).getContent.asInstanceOf[String])
 
               if (multiPartMessage.getBodyPart(i).isMimeType("text/plain")) {
                 rawText = multiPartMessage.getBodyPart(i).getContent.asInstanceOf[String]
