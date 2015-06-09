@@ -113,6 +113,7 @@ object ModelBuilder {
       + "% density)")
     println("# New vector saved at: " + modelPath)
     println("Score for \"spark\": " + relevanceVector.apply(hashingTF.indexOf("spark")))
+    println("Score for \"the\": " + relevanceVector.apply(hashingTF.indexOf("the")))
     println("Score for \"thisShouldntHaveAScore\": " + relevanceVector
       .apply(hashingTF.indexOf("thisShouldntHaveAScore"))
     )
