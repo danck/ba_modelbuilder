@@ -35,6 +35,7 @@ object MailService {
     val session = Session.getDefaultInstance(props, null)
     val store = session.getStore("imaps")
     val messageTexts: StringBuilder = new StringBuilder
+    var fetchedMessagesCounter = 0
 
     try {
       store.connect("imap.gmail.com", account, password)
@@ -43,7 +44,6 @@ object MailService {
 
       val messages = inbox.getMessages
       var rawText = new String
-      var counter = 0
 
       // iterate over every retrieved message to extract and concatenate message bodies
       messages.foreach(msg => {
@@ -79,9 +79,7 @@ object MailService {
               cleanText = cleanLines.reduce((line1, line2) => line1 + " " + line2).replaceAll("[^a-zA-Z0-9]", " ") // remove special characters
             } else
 
-            counter += 1
-            //println( counter.toString + "\t:" + msg.getSubject )
-            println("##### Appending #####\n")
+              fetchedMessagesCounter += 1
             messageTexts.append(cleanText + "\n")
           }
         } catch {
@@ -98,7 +96,7 @@ object MailService {
     } finally {
       store.close()
     }
-    println(messageTexts.toString())
+    println("Numer of messages read: " + fetchedMessagesCounter)
     return messageTexts.toString()
   }
 }
