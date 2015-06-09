@@ -81,8 +81,10 @@ object MailService {
             counter += 1
             println( counter.toString + "\t:" + msg.getSubject )
             //msg.setFlag(Flags.Flag.DELETED, true)
-            if(cleanText.nonEmpty)
-              messageTexts.append(cleanText + "\n")
+            if(cleanText.nonEmpty) {
+              messageTexts ++= cleanText + "\n"
+              println(messageTexts)
+            }
           }
         } catch {
           case uee: UnsupportedEncodingException =>  //discard current data and continue loop
