@@ -38,7 +38,7 @@ object MailService {
 
     try {
       store.connect("imap.gmail.com", account, password)
-      val inbox = store.getFolder("Inbox")
+      val inbox = store.getFolder("Inbox/test")
       inbox.open(Folder.READ_WRITE)
 
       val messages = inbox.getMessages
