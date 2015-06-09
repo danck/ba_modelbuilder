@@ -47,17 +47,13 @@ object MailService {
 
       // iterate over every retrieved message to extract and concatenate message bodies
       messages.foreach(msg => {
-        println("#######"+ msg.getSubject)
         rawText = ""
         try {
 
           // iterate over parts of multipart messages and extract text
-          println("\n########" + msg.getSubject)
           if (msg.getContent.isInstanceOf[Multipart]) {
             val multiPartMessage = msg.getContent.asInstanceOf[Multipart]
             for (i <- 0 to multiPartMessage.getCount - 1) {
-              println("\t" + i + " - getContentType: " + multiPartMessage.getBodyPart(i).getContentType)
-              println("\t" + i + " - getContent: " + multiPartMessage.getBodyPart(i).getContent.toString)
               if (multiPartMessage.getBodyPart(i).getContent.isInstanceOf[String]) {
                 rawText = multiPartMessage.getBodyPart(i).getContent.asInstanceOf[String]
               }
@@ -84,11 +80,7 @@ object MailService {
 
             counter += 1
             println( counter.toString + "\t:" + msg.getSubject )
-            //msg.setFlag(Flags.Flag.DELETED, true)
-            if(cleanText.nonEmpty) {
-              messageTexts ++= cleanText + "\n"
-              println(messageTexts)
-            }
+            messageTexts.append(cleanText + "\n")
           }
         } catch {
           case uee: UnsupportedEncodingException =>  //discard current data and continue loop
