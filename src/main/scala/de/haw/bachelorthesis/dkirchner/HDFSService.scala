@@ -1,6 +1,6 @@
 package de.haw.bachelorthesis.dkirchner
 
-import java.io.{IOException, File}
+import java.io.{BufferedOutputStream, FileWriter, IOException, File}
 import java.util.Calendar
 
 import org.apache.hadoop.conf.Configuration
@@ -52,12 +52,13 @@ object HDFSService {
 
     try {
       if (!hdfs.exists(path)){
+        println("Lege Datei an: " + path.getName)
         if (!hdfs.createNewFile(path)) {
           throw new IOException("Datei konnte nicht angelegt werden.")
 
         }
       }
-      println("Lege Datei an: " + path.getName)
+      println("Appending string of length " + content.length)
       val outStream = hdfs.append(path)
       outStream.writeChars(content)
       outStream.flush()
