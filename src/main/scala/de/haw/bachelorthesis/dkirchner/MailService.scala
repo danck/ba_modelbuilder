@@ -74,7 +74,7 @@ object MailService {
               .filter(line => !line.trim.startsWith("<")) // remove tagged lines (html)
               .filter(line => !line.trim.startsWith("On"))
             val cleanLines = bodyLines.map(line => line.stripLineEnd) // remove newlines
-            val cleanText = cleanLines.reduce((line1, line2) => line1.concat(" " + line2)).replaceAll("[^a-zA-Z0-9]", " ") // remove special characters
+            val cleanText = cleanLines.reduce((line1, line2) => line1 + " " + line2).replaceAll("[^a-zA-Z0-9]", " ") // remove special characters
 
             counter += 1
             //println( counter.toString + "\t:" + msg.getSubject )
