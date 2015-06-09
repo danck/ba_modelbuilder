@@ -55,7 +55,6 @@ object MailService {
             val multiPartMessage = msg.getContent.asInstanceOf[Multipart]
             for (i <- 0 to multiPartMessage.getCount - 1) {
               if (multiPartMessage.getBodyPart(i).isMimeType("text/*")) {
-                println("Treffer: " + msg.getSubject)
                 rawText = multiPartMessage.getBodyPart(i).getContent.asInstanceOf[String]
               }
             }
@@ -80,7 +79,8 @@ object MailService {
               else ""
 
             counter += 1
-            println( counter.toString + "\t:" + msg.getSubject )
+            //println( counter.toString + "\t:" + msg.getSubject )
+            println("##### Appending #####\n" + cleanText)
             messageTexts.append(cleanText + "\n")
           }
         } catch {
