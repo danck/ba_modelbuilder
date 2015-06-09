@@ -4,7 +4,7 @@
 		module="model-builder$sources_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20150607085626"
+		publication="20150609091840"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>
