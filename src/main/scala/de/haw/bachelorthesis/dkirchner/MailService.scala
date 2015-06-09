@@ -52,9 +52,11 @@ object MailService {
         try {
 
           // iterate over parts of multipart messages and extract text
+          println("\t"+msg.getContent.getClass)
           if (msg.getContent.isInstanceOf[Multipart]) {
             val multiPartMessage = msg.getContent.asInstanceOf[Multipart]
             for (i <- 0 to multiPartMessage.getCount - 1) {
+              println("\t\t"+multiPartMessage.getBodyPart(i).getContent.getClass)
               if (multiPartMessage.getBodyPart(i).getContent.isInstanceOf[String]) {
                 rawText = multiPartMessage.getBodyPart(i).getContent.asInstanceOf[String]
               }
@@ -70,7 +72,6 @@ object MailService {
           // this also performs basic filtering an normalization on the text
           if (rawText != "") {
             val bodyString = rawText
-            println(rawText)
             val bodyLines = bodyString.split('\n')
               .filter(line => !line.trim.startsWith(">")) // remove quoted lines
               .filter(line => !line.trim.startsWith("<")) // remove tagged lines (html)
