@@ -105,7 +105,7 @@ object ModelBuilder {
     }
 
     // Report
-    documents.foreach(line => println(line))
+    documents.foreach(line => println("document: " + line))
     println("#### UPDATED AT " + Calendar.getInstance().getTime + " ####")
     println("# Generated new feature vector with " +
       relevanceVector.asInstanceOf[SparseVector].getIndices.size + " non-zero entries  (" +

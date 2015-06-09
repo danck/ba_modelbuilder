@@ -75,7 +75,7 @@ object MailService {
               .filter(line => !line.trim.startsWith("On"))
             val cleanLines = bodyLines.map(line => line.stripLineEnd) // remove newlines
             val cleanText = if (cleanLines.nonEmpty)
-                cleanLines.reduce(_ + _).replaceAll("[^a-zA-Z0-9]", " ") // remove special characters
+                cleanLines.reduce(_ + _) //.replaceAll("[^a-zA-Z0-9]", " ") // remove special characters
               else ""
 
             counter += 1
